@@ -1,10 +1,10 @@
 ## Problemática
-Las enfermedades cardíacas son la principal causa de muerte en el mundo. Según la Organización Mundial de la Salud (OMS), aproximadamente 17.9 millones de personas mueren por enfermedades cardiovasculares cada año. [1] *
-El 31.8% de la población presenta una salud cardiovascular deficiente. [2]
-El costo de las enfermedades cardíacas en América Latina supera los 30 mil millones de dólares. [3]
-En Perú existen aproximadamente 800 especialistas en cardiología, cifra considerada insuficiente para una población de más de 33 millones de habitantes. [4]
-Más del 60% del total de especialistas médicos en Perú, incluyendo cardiólogos, se concentra en la ciudad de Lima, lo que genera una distribución geográfica desigual. [4]
-Las regiones más afectadas por la falta de especialistas incluyen Loreto, Cusco, Puno, Cajamarca y otras zonas rurales o de difícil acceso, donde la disponibilidad de cardiólogos es mínima o nula. [4]
+* Las enfermedades cardíacas son la principal causa de muerte en el mundo. Según la Organización Mundial de la Salud (OMS), aproximadamente 17.9 millones de personas mueren por enfermedades cardiovasculares cada año. [1]
+* El 31.8% de la población presenta una salud cardiovascular deficiente. [2]
+* El costo de las enfermedades cardíacas en América Latina supera los 30 mil millones de dólares. [3]
+* En Perú existen aproximadamente 800 especialistas en cardiología, cifra considerada insuficiente para una población de más de 33 millones de habitantes. [4]
+* Más del 60% del total de especialistas médicos en Perú, incluyendo cardiólogos, se concentra en la ciudad de Lima, lo que genera una distribución geográfica desigual. [4]
+* Las regiones más afectadas por la falta de especialistas incluyen Loreto, Cusco, Puno, Cajamarca y otras zonas rurales o de difícil acceso, donde la disponibilidad de cardiólogos es mínima o nula. [4]
 
 ## Referencias IEEE
 [1] World Health Organization, “Cardiovascular diseases (CVDs),” WHO, Geneva. https://www.who.int/health-topics/cardiovascular-diseases (accessed Aug. 22, 2026).  
