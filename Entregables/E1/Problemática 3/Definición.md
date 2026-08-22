@@ -1,37 +1,37 @@
-# Problemática
-## Contexto Global
+# 1. Problemática
+## 1.1. Contexto Global
 Anualmente, aproximadamente 20 millones de personas requieren ingreso a Unidades de Cuidados Intensivos (UCI) y Ventilación Mecánica Invasiva (VMI) (Del Bono et al., 2025). Durante esta intervención, la Asincronía Paciente-Ventilador (APV) —la falta de coordinación entre los esfuerzos del paciente y el soporte de la máquina— se presenta en hasta el 80% de los casos, alcanzando un grado severo en el 35% de los pacientes (Del Bono et al., 2025). Las APV abarcan patrones complejos como el esfuerzo ineficaz, doble disparo, ciclado prematuro o retardado, disparo inverso, privación de flujo y autociclado (Murias et al., 2016).
 A pesar de su frecuencia, la monitorización gráfica de las ondas de presión y flujo en la pantalla del ventilador es considerada una competencia avanzada de alta complejidad para el personal asistencial (Murias et al., 2016). En países de ingresos bajos y medianos, la tasa de detección correcta de APV por parte del personal médico es inferior al 15% (en comparación con un modesto 21% en Norteamérica) (Del Bono et al., 2025; Chelbi et al., 2024). Esta ineficiencia del personal para identificar asincronías visualmente desencadena un círculo vicioso: mayor necesidad de sedación, ventilación prolongada, daño pulmonar (barotrauma/volutrauma), aumento en días de estancia hospitalaria y una mayor mortalidad (Subirà et al., 2018; Bulleri et al., 2018).
-## Contexto Nacional
-### Saturación crítica en camas UCI
+## 1.2. Contexto Nacional
+### 1.2.1. Saturación crítica en camas UCI
 Datos del Repositorio Único Nacional de Información en Salud muestran que la ocupación de camas UCI para adultos alcanza el 85% a nivel nacional. En Lima, la situación es extrema: de 214 camas UCI instaladas, el 95% se encuentra ocupado, dejando únicamente 11 camas disponibles para toda la región. 
-### Mortalidad e impacto clínico
+### 1.2.2. Mortalidad e impacto clínico
 La mortalidad de pacientes que ingresan a UCI en el Perú alcanza el 38% (Zegarra Piérola et al., 2022), situando al índice de asincronía elevado como un factor de riesgo directo para el fallecimiento en instituciones como el Hospital Nacional Dos de Mayo (Canchari Martínez, 2024). 
-### Costo y estancia crónica
+### 1.2.3. Costo y estancia crónica
 Las estancias prolongadas en UCI por mala interacción máquina-paciente derivan en cuidados intensivos de estancia crónica (Moncada Mapelli et al., 2025), costando mucho mas de lo necesario por paciente. La falta de calibración interna de parámetros ambientales (temperatura, presión barométrica y humedad) modifica el volumen entregado e incrementa picos de presión incontrolados que provocan barotrauma sin que las alarmas del ventilador lo asocien a una asincronía real.
-# Objetivos
-## Objetivo General
+# 2. Objetivos
+## 2.1. Objetivo General
 Diseñar e implementar un sistema embebido de bajo costo para la calibración externa de parámetros físicos, detección de asincronías mediante Machine Learning y emisión de alertas tempranas en ventiladores mecánicos, validado en un entorno de simulación  sin intervención de sujetos humanos. 
-## Objetivo Específico
-### Diseñar
+## 2.2. Objetivo Específico
+### 2.2.1. Diseñar
 Diseñar una placa PCB personalizada de bajo costo que integre etapas de acondicionamiento de señal para sensores de presión diferencial, temperatura/humedad y biopotenciales/fuerza de disparo.
-### Fabricar
+### 2.2.2. Fabricar
 Fabricar mediante impresión 3D un acople proximal tipo Venturi con bajo espacio muerto para la captura continua de ondas de flujo y presión en el circuito respiratorio.
-### Desarrollar
+### 2.2.3. Desarrollar
 Desarrollar un modelo de Machine Learning para series temporales (TinyML) ejecutable en microcontrolador, capaz de clasificar patrones de APV (p. ej., esfuerzo ineficaz, doble disparo) y errores de calibración térmica.
-### Idear
+### 2.2.4. Idear
 Idear un módulo de actuación y alerta inteligente que active alarmas audiovisuales (buzzer + matriz LED/pantalla) ante detección de APV y accione una válvula de alivio física ante riesgo inminente de barotrauma.
-### Validar 
+### 2.2.5. Validar 
 Validar experimentalmente el sistema en un periodo de 4 meses empleando un simulador pulmonar pasivo (modelo hidráulico con botella de agua) y un prototipo de ventilador de pruebas.
-# Propuesta
+# 3. Propuesta
 Sistema de bajo costo para la calibración externa de parámetros físicos, detección de asincronías mediante Machine Learning y emisión de alertas tempranas en ventiladores mecánicos, validado en un entorno de simulación sin intervención de sujetos humanos. 
-## Sensar
+## 3.1. Sensar
 1. Ondas de presión y flujo proximal: Sensor conectado al tubo Venturi impreso en 3D para extraer series temporales.
 2. Parámetros ambientales: Sensor para registrar la temperatura y humedad del gas, recalculando el volumen real a condiciones BTPS.
 3. Esfuerzo del paciente (simulado): Pulsador analógico o sensor piezoeléctrico en la botella para registrar el momento exacto de la "inspiración" del paciente.
-## Procesar
+## 3.2. Procesar
 Un modelo entrenado en Python y exportado mediante Edge Impulse a un microcontrolador. El modelo analiza la forma de onda de la serie temporal (presión vs. tiempo) y detecta los patrones de asincronía que el ojo humano no logra identificar con facilidad (Chelbi et al., 2024). 
-## Actuar
+## 3.3. Actuar
 1. Sistema de alarmas inteligente: Si la PCB identifica una asincronía o una falla de calibración, activa un sistema de alerta y una pantalla que muestran el APV al personal médico en tiempo real.
 2. Protección mecánica (barotrauma): Una válvula solenoide o servo-mecanismo purga inmediatamente el exceso de presión si el pito de presión supera el límite seguro antes de dañar el pulmón simulado.
 # Referencias
