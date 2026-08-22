@@ -32,7 +32,7 @@ La finalidad es determinar si la incorporación de información óptica y térmi
 (https://pubmed.ncbi.nlm.nih.gov/23043862/)
 (https://www.journalofsurgicalresearch.com/article/S0022-4804(12)00823-2/abstract)
 (https://opg.optica.org/abstract.cfm?URI=Cancer-2016-JTu3A.26)
-(https://pmc.ncbi.nlm.nih.gov/articles/PMC11329730/?utm_source=chatgpt.com)
+(https://pmc.ncbi.nlm.nih.gov/articles/PMC11329730/)
 (https://pmc.ncbi.nlm.nih.gov/articles/PMC5982599/pdf/sensors-18-01441.pdf)
 (https://pubmed.ncbi.nlm.nih.gov/10843103/)
 (https://iopscience.iop.org/article/10.1088/0031-9155/45/5/312)
