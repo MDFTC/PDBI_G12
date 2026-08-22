@@ -4,16 +4,25 @@
 Anualmente, aproximadamente 20 millones de personas requieren ingreso a Unidades de Cuidados Intensivos (UCI) y Ventilación Mecánica Invasiva (VMI) (Del Bono et al., 2025). Durante esta intervención, la Asincronía Paciente-Ventilador (APV) —la falta de coordinación entre los esfuerzos del paciente y el soporte de la máquina— se presenta en hasta el 80% de los casos, alcanzando un grado severo en el 35% de los pacientes (Del Bono et al., 2025). Las APV abarcan patrones complejos como el esfuerzo ineficaz, doble disparo, ciclado prematuro o retardado, disparo inverso, privación de flujo y autociclado (Murias et al., 2016).
 A pesar de su frecuencia, la monitorización gráfica de las ondas de presión y flujo en la pantalla del ventilador es considerada una competencia avanzada de alta complejidad para el personal asistencial (Murias et al., 2016). En países de ingresos bajos y medianos, la tasa de detección correcta de APV por parte del personal médico es inferior al 15% (en comparación con un modesto 21% en Norteamérica) (Del Bono et al., 2025; Chelbi et al., 2024). Esta ineficiencia del personal para identificar asincronías visualmente desencadena un círculo vicioso: mayor necesidad de sedación, ventilación prolongada, daño pulmonar (barotrauma/volutrauma), aumento en días de estancia hospitalaria y una mayor mortalidad (Subirà et al., 2018; Bulleri et al., 2018).
 </p>
+
 ## 1.2. Contexto Nacional
 ### 1.2.1. Saturación crítica en camas UCI
+<p align="justify">
 Datos del Repositorio Único Nacional de Información en Salud muestran que la ocupación de camas UCI para adultos alcanza el 85% a nivel nacional. En Lima, la situación es extrema: de 214 camas UCI instaladas, el 95% se encuentra ocupado, dejando únicamente 11 camas disponibles para toda la región. 
+
 ### 1.2.2. Mortalidad e impacto clínico
+<p align="justify">
 La mortalidad de pacientes que ingresan a UCI en el Perú alcanza el 38% (Zegarra Piérola et al., 2022), situando al índice de asincronía elevado como un factor de riesgo directo para el fallecimiento en instituciones como el Hospital Nacional Dos de Mayo (Canchari Martínez, 2024). 
+  
 ### 1.2.3. Costo y estancia crónica
+<p align="justify">
 Las estancias prolongadas en UCI por mala interacción máquina-paciente derivan en cuidados intensivos de estancia crónica (Moncada Mapelli et al., 2025), costando mucho mas de lo necesario por paciente. La falta de calibración interna de parámetros ambientales (temperatura, presión barométrica y humedad) modifica el volumen entregado e incrementa picos de presión incontrolados que provocan barotrauma sin que las alarmas del ventilador lo asocien a una asincronía real.
+  
 # 2. Objetivos
 ## 2.1. Objetivo General
+<p align="justify">
 Diseñar e implementar un sistema embebido de bajo costo para la calibración externa de parámetros físicos, detección de asincronías mediante Machine Learning y emisión de alertas tempranas en ventiladores mecánicos, validado en un entorno de simulación  sin intervención de sujetos humanos. 
+  
 ## 2.2. Objetivo Específico
 ### 2.2.1. Diseñar
 Diseñar una placa PCB personalizada de bajo costo que integre etapas de acondicionamiento de señal para sensores de presión diferencial, temperatura/humedad y biopotenciales/fuerza de disparo.
@@ -26,7 +35,9 @@ Idear un módulo de actuación y alerta inteligente que active alarmas audiovisu
 ### 2.2.5. Validar 
 Validar experimentalmente el sistema en un periodo de 4 meses empleando un simulador pulmonar pasivo (modelo hidráulico con botella de agua) y un prototipo de ventilador de pruebas.
 # 3. Propuesta
+<p align="justify">
 Sistema de bajo costo para la calibración externa de parámetros físicos, detección de asincronías mediante Machine Learning y emisión de alertas tempranas en ventiladores mecánicos, validado en un entorno de simulación sin intervención de sujetos humanos. 
+  
 ## 3.1. Sensar
 1. Ondas de presión y flujo proximal: Sensor conectado al tubo Venturi impreso en 3D para extraer series temporales.
 2. Parámetros ambientales: Sensor para registrar la temperatura y humedad del gas, recalculando el volumen real a condiciones BTPS.
