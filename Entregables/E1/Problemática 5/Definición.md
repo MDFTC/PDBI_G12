@@ -1,5 +1,5 @@
-# Problemática
-Las enfermedades cardíacas son la principal causa de muerte en el mundo. Según la Organización Mundial de la Salud (OMS), aproximadamente 17.9 millones de personas mueren por enfermedades cardiovasculares cada año. [1]
+## Problemática
+Las enfermedades cardíacas son la principal causa de muerte en el mundo. Según la Organización Mundial de la Salud (OMS), aproximadamente 17.9 millones de personas mueren por enfermedades cardiovasculares cada año. [1] *
 El 31.8% de la población presenta una salud cardiovascular deficiente. [2]
 El costo de las enfermedades cardíacas en América Latina supera los 30 mil millones de dólares. [3]
 En Perú existen aproximadamente 800 especialistas en cardiología, cifra considerada insuficiente para una población de más de 33 millones de habitantes. [4]
@@ -16,7 +16,7 @@ Las regiones más afectadas por la falta de especialistas incluyen Loreto, Cusco
 ### Detector de patologías cardíacas
 Dispositivo de auscultación portátil diseñado para recolectar sonidos torácicos mediante los puntos estándar y filtrar ruidos ambientales o interferencias de entornos clínicos. El sistema procesa las muestras tomadas y las clasifica mediante un modelo entrenado en dos categorías (normal y anormal) para detectar sonidos cardíacos extraños, como soplos. Aunque no está concebido para reemplazar a un profesional ni emitir un diagnóstico definitivo, el dispositivo busca mitigar la severa escasez de especialistas cardíacos en el país y en zonas rurales. Su propósito principal es alertar sobre anomalías y proporcionar una evaluación preliminar para facilitar la toma de decisiones en la derivación oportuna del paciente a una institución especializada.
 
-### Estado del Arte
+## Estado del Arte
 * **The 3M™ Littmann® CORE Digital Stethoscope (Patente WO2022123397A1):**  
   [https://www.littmann.com/en-us/home/core-digital-stethoscope/](https://www.littmann.com/en-us/home/core-digital-stethoscope/)  
   Es un estetoscopio provisto de un lado pediátrico y otro para adultos, el cual contiene un módulo de procesamiento de señales, un sensor de sonidos cardíacos y un módulo de comunicación inalámbrica. El dispositivo transmite en tiempo real las ondas y sonidos capturados hacia una aplicación para mostrarlos como si hubieran sido obtenidos por un electrocardiograma o un fonocardiograma, ofreciendo además una inteligencia artificial que realiza una detección automática de patrones.
