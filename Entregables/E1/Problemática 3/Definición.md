@@ -25,28 +25,44 @@ Diseñar e implementar un sistema embebido de bajo costo para la calibración ex
   
 ## 2.2. Objetivo Específico
 ### 2.2.1. Diseñar
+<p align="justify">
 Diseñar una placa PCB personalizada de bajo costo que integre etapas de acondicionamiento de señal para sensores de presión diferencial, temperatura/humedad y biopotenciales/fuerza de disparo.
+  
 ### 2.2.2. Fabricar
+<p align="justify">
 Fabricar mediante impresión 3D un acople proximal tipo Venturi con bajo espacio muerto para la captura continua de ondas de flujo y presión en el circuito respiratorio.
+  
 ### 2.2.3. Desarrollar
+<p align="justify">
 Desarrollar un modelo de Machine Learning para series temporales (TinyML) ejecutable en microcontrolador, capaz de clasificar patrones de APV (p. ej., esfuerzo ineficaz, doble disparo) y errores de calibración térmica.
+  
 ### 2.2.4. Idear
+<p align="justify">
 Idear un módulo de actuación y alerta inteligente que active alarmas audiovisuales (buzzer + matriz LED/pantalla) ante detección de APV y accione una válvula de alivio física ante riesgo inminente de barotrauma.
+  
 ### 2.2.5. Validar 
+<p align="justify">
 Validar experimentalmente el sistema en un periodo de 4 meses empleando un simulador pulmonar pasivo (modelo hidráulico con botella de agua) y un prototipo de ventilador de pruebas.
+  
 # 3. Propuesta
 <p align="justify">
 Sistema de bajo costo para la calibración externa de parámetros físicos, detección de asincronías mediante Machine Learning y emisión de alertas tempranas en ventiladores mecánicos, validado en un entorno de simulación sin intervención de sujetos humanos. 
   
 ## 3.1. Sensar
+<p align="justify">
 1. Ondas de presión y flujo proximal: Sensor conectado al tubo Venturi impreso en 3D para extraer series temporales.
 2. Parámetros ambientales: Sensor para registrar la temperatura y humedad del gas, recalculando el volumen real a condiciones BTPS.
 3. Esfuerzo del paciente (simulado): Pulsador analógico o sensor piezoeléctrico en la botella para registrar el momento exacto de la "inspiración" del paciente.
+  
 ## 3.2. Procesar
+<p align="justify">
 Un modelo entrenado en Python y exportado mediante Edge Impulse a un microcontrolador. El modelo analiza la forma de onda de la serie temporal (presión vs. tiempo) y detecta los patrones de asincronía que el ojo humano no logra identificar con facilidad (Chelbi et al., 2024). 
+  
 ## 3.3. Actuar
+<p align="justify">
 1. Sistema de alarmas inteligente: Si la PCB identifica una asincronía o una falla de calibración, activa un sistema de alerta y una pantalla que muestran el APV al personal médico en tiempo real.
 2. Protección mecánica (barotrauma): Una válvula solenoide o servo-mecanismo purga inmediatamente el exceso de presión si el pito de presión supera el límite seguro antes de dañar el pulmón simulado.
+  
 # Referencias
 1. Chelbi, R., Thabet, F., Ennouri, E., Meddeb, K., Toumi, R., Zghidi, M., Ben Saida, I., & Boussarsar, M. (2024). The Ability of Critical Care Physicians to Identify Patient-Ventilator Asynchrony Using Waveform Analysis: A National Survey. Respiratory care, 69(2), 176–183. https://doi.org/10.4187/respcare.11360
 2. Subirà, C., de Haro, C., Magrans, R., Fernández, R., & Blanch, L. (2018). Minimizing Asynchronies in Mechanical Ventilation: Current and Future Trends. Respiratory care, 63(4), 464–478. https://doi.org/10.4187/respcare.05949
