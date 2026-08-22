@@ -49,7 +49,6 @@ Validar experimentalmente el sistema en un periodo de 4 meses empleando un simul
 Sistema de bajo costo para la calibración externa de parámetros físicos, detección de asincronías mediante Machine Learning y emisión de alertas tempranas en ventiladores mecánicos, validado en un entorno de simulación sin intervención de sujetos humanos. 
   
 ## 3.1. Sensar
-<p align="justify">
 1. Ondas de presión y flujo proximal: Sensor conectado al tubo Venturi impreso en 3D para extraer series temporales.
 2. Parámetros ambientales: Sensor para registrar la temperatura y humedad del gas, recalculando el volumen real a condiciones BTPS.
 3. Esfuerzo del paciente (simulado): Pulsador analógico o sensor piezoeléctrico en la botella para registrar el momento exacto de la "inspiración" del paciente.
@@ -59,7 +58,6 @@ Sistema de bajo costo para la calibración externa de parámetros físicos, dete
 Un modelo entrenado en Python y exportado mediante Edge Impulse a un microcontrolador. El modelo analiza la forma de onda de la serie temporal (presión vs. tiempo) y detecta los patrones de asincronía que el ojo humano no logra identificar con facilidad (Chelbi et al., 2024). 
   
 ## 3.3. Actuar
-<p align="justify">
 1. Sistema de alarmas inteligente: Si la PCB identifica una asincronía o una falla de calibración, activa un sistema de alerta y una pantalla que muestran el APV al personal médico en tiempo real.
 2. Protección mecánica (barotrauma): Una válvula solenoide o servo-mecanismo purga inmediatamente el exceso de presión si el pito de presión supera el límite seguro antes de dañar el pulmón simulado.
   
