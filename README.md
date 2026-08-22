@@ -11,7 +11,7 @@
 |-------|---------------------|
 | --- | Angie Xiomara Huánuco Vásquez |
 | --- | Angel Gabriel Morales Mayanga |
-| --- | Carlos Andres Ramos Guzmán|
+| --- | Carlos Andres Ramos Guzmán |
 | --- | Aniball Harnaldo Panta Navarro |
 | --- | Micaela de Fátima Tassara Camarena  |
 
