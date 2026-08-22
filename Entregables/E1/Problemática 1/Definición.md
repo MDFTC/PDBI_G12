@@ -9,7 +9,7 @@ Por ello, este proyecto propone desarrollar un sistema multimodal que combine im
 
 Para el entrenamiento inicial del modelo se podría utilizar el ISIC Archive, que proporciona imágenes de lesiones cutáneas con diagnósticos asociados. Posteriormente, los datos NIR y térmicos podrían obtenerse experimentalmente con el prototipo, permitiendo estudiar la utilidad de estas variables como información complementaria.
 
-##Referencias IEEE
+## Referencias IEEE
 
 [1] International Agency for Research on Cancer, Global Cancer Observatory: Melanoma of Skin, GLOBOCAN 2022. Lyon, France: IARC/WHO, 2024. GLOBOCAN 2022 – Melanoma of skin
 
@@ -19,8 +19,8 @@ Para el entrenamiento inicial del modelo se podría utilizar el ISIC Archive, qu
 
 [4] International Skin Imaging Collaboration, ISIC Archive. ISIC Archive
 
-##Propuesta
-###Sistema multimodal portátil para la caracterización de lesiones melanocíticas mediante imágenes RGB, infrarrojo cercano (NIR) y termografía infrarroja
+## Propuesta
+### Sistema multimodal portátil para la caracterización de lesiones melanocíticas mediante imágenes RGB, infrarrojo cercano (NIR) y termografía infrarroja
 
 La propuesta consiste en desarrollar un prototipo portátil y no invasivo capaz de adquirir diferentes tipos de información de una lesión cutánea, principalmente nevos (lunares) y melanomas. El sistema combinará una cámara RGB, un sistema de infrarrojo cercano (NIR) y un sensor infrarrojo térmico (IR).
 
