@@ -21,7 +21,7 @@ Las estancias prolongadas en UCI por mala interacción máquina-paciente derivan
 # 2. Objetivos
 ## 2.1. Objetivo General
 <p align="justify">
-Diseñar e implementar un sistema embebido de bajo costo para la calibración externa de parámetros físicos, detección de asincronías mediante Machine Learning y emisión de alertas tempranas en ventiladores mecánicos, validado en un entorno de simulación  sin intervención de sujetos humanos. 
+Diseñar e implementar un sistema de bajo costo para la calibración externa de parámetros físicos, detección de asincronías mediante Machine Learning y emisión de alertas tempranas en ventiladores mecánicos, validado en un entorno de simulación  sin intervención de sujetos humanos. 
   
 ## 2.2. Objetivo Específico
 ### 2.2.1. Diseñar
