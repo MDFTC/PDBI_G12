@@ -1,7 +1,9 @@
 # 1. Problemática
 ## 1.1. Contexto Global
+<p align="justify">
 Anualmente, aproximadamente 20 millones de personas requieren ingreso a Unidades de Cuidados Intensivos (UCI) y Ventilación Mecánica Invasiva (VMI) (Del Bono et al., 2025). Durante esta intervención, la Asincronía Paciente-Ventilador (APV) —la falta de coordinación entre los esfuerzos del paciente y el soporte de la máquina— se presenta en hasta el 80% de los casos, alcanzando un grado severo en el 35% de los pacientes (Del Bono et al., 2025). Las APV abarcan patrones complejos como el esfuerzo ineficaz, doble disparo, ciclado prematuro o retardado, disparo inverso, privación de flujo y autociclado (Murias et al., 2016).
 A pesar de su frecuencia, la monitorización gráfica de las ondas de presión y flujo en la pantalla del ventilador es considerada una competencia avanzada de alta complejidad para el personal asistencial (Murias et al., 2016). En países de ingresos bajos y medianos, la tasa de detección correcta de APV por parte del personal médico es inferior al 15% (en comparación con un modesto 21% en Norteamérica) (Del Bono et al., 2025; Chelbi et al., 2024). Esta ineficiencia del personal para identificar asincronías visualmente desencadena un círculo vicioso: mayor necesidad de sedación, ventilación prolongada, daño pulmonar (barotrauma/volutrauma), aumento en días de estancia hospitalaria y una mayor mortalidad (Subirà et al., 2018; Bulleri et al., 2018).
+</p>
 ## 1.2. Contexto Nacional
 ### 1.2.1. Saturación crítica en camas UCI
 Datos del Repositorio Único Nacional de Información en Salud muestran que la ocupación de camas UCI para adultos alcanza el 85% a nivel nacional. En Lima, la situación es extrema: de 214 camas UCI instaladas, el 95% se encuentra ocupado, dejando únicamente 11 camas disponibles para toda la región. 
