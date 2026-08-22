@@ -9,14 +9,14 @@
  
 | Cargo | Apellidos y nombres | 
 |-------|---------------------|
-| --- | Angie Xiomara Huánuco Vásquez |
-| --- | Angel Gabriel Morales Mayanga |
-| --- | Carlos Andres Ramos Guzmán |
-| --- | Aniball Harnaldo Panta Navarro |
-| --- | Micaela de Fátima Tassara Camarena  |
+| Modelador en 3D | Angie Xiomara Huánuco Vásquez |
+| Electrónica | Angel Gabriel Morales Mayanga |
+| Programador | Carlos Andres Ramos Guzmán |
+| Investigación y Redacción| Aniball Harnaldo Panta Navarro |
+| Gestor de Repositorio de GitHub | Micaela de Fátima Tassara Camarena  |
 
 </p>
 
 <p align="center">
-  <img src="ruta/de/tu/imagen.png" width="500">
+  <img src="Images/IMG-20260822-WA0020.jpg" width="500">
 </p>
