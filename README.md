@@ -10,7 +10,7 @@
 | Cargo | Apellidos y nombres | 
 |-------|---------------------|
 | --- | Angie Xiomara Huánuco Vásquez | 
-| --- | Angel |
+| --- | Angel Gabriel Morales Mayanga |
 | --- | Carlos Andres Ramos Guzmán|
 | --- | Aniball Harnaldo Panta Navarro | 
 | --- | Micaela de Fátima Tassara Camarena  |
