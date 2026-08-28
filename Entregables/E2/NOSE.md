@@ -1,3 +1,0 @@
-# hdfiwhi
-## sgdi
-dbanldnla
