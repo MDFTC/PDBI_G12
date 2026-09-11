@@ -20,3 +20,78 @@
 <p align="center">
   <img src="Images/IMG-20260822-WA0020.jpg" width="500">
 </p>
+
+## 2. Problemática
+
+En esta sección se describe la problemática identificada, sus causas, consecuencias y las necesidades detectadas.
+
+---
+
+## 3. Estado del arte
+
+### 3.1 Artículos académicos
+
+Se presentan artículos científicos relacionados con la problemática y las soluciones existentes.
+
+### 3.2 Patentes
+
+Se presentan patentes relacionadas con las tecnologías y soluciones existentes para abordar la problemática.
+
+### 3.3 Revistas y catálogos
+
+Se revisan revistas, catálogos y otras fuentes especializadas relacionadas con las soluciones existentes en el mercado.
+
+### 3.4 Páginas de fabricantes
+
+Se presentan productos y soluciones desarrolladas por fabricantes relacionados con la problemática.
+
+---
+
+## 4. Lista de Exigencias
+
+En esta sección se establecen los requisitos y exigencias que deberá cumplir la solución propuesta.
+
+| N.º | Exigencia | Tipo | Prioridad |
+|---|---|---|---|
+| 1 |  |  |  |
+| 2 |  |  |  |
+| 3 |  |  |  |
+
+---
+
+## 5. Estructura de Funciones Óptima
+
+### 5.1 Black Box
+
+Se presenta la representación de la caja negra del sistema, identificando las entradas, procesos y salidas principales.
+
+### 5.2 Secuencia de operaciones
+
+Se describe la secuencia de operaciones que debe realizar el sistema para cumplir con su función principal.
+
+### 5.3 Estructura de funciones
+
+Se presenta la descomposición de la función principal en funciones parciales y sus relaciones.
+
+---
+
+## 6. Gantt
+
+Se presenta el cronograma de actividades del proyecto mediante un diagrama de Gantt.
+
+| Actividad | Inicio | Fin | Estado |
+|---|---|---|---|
+| Problemática y necesidades | 21/08/2026 | 22/08/2026 | Completado |
+| Estado del arte | 21/08/2026 | 04/09/2026 | Completado |
+| Marco teórico | 22/08/2026 | 04/09/2026 | Completado |
+| Lista de exigencias | 28/08/2026 | 05/09/2026 | Completado |
+| Estructura de funciones | 04/09/2026 | 11/09/2026 | Completado |
+| Matriz morfológica | 11/09/2026 | 12/09/2026 | En proceso |
+| Presentación y sustentación H1 | 17/09/2026 | 19/09/2026 | Pendiente |
+| Correcciones H1 | 20/09/2026 | 26/09/2026 | Pendiente |
+
+---
+
+## 7. Referencias
+
+Las fuentes utilizadas para el desarrollo del proyecto se presentan en esta sección.
