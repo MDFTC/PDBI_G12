@@ -23,9 +23,11 @@
 
 ## 2. Problemática
 
-En esta sección se describe la problemática identificada, sus causas, consecuencias y las necesidades detectadas.
+El melanoma cutáneo constituye una problemática relevante debido a su capacidad de progresión y a la importancia de su identificación oportuna. En el Perú, durante 2024 se estimaron 1 965 nuevos casos de melanoma y 356 defunciones asociadas a esta enfermedad [1]. Asimismo, la supervivencia a cinco años supera el 99 % cuando el melanoma se encuentra localizado, pero disminuye al 76 % cuando existe propagación regional y al 36 % ante metástasis a distancia [2], evidenciando la importancia de una evaluación temprana.
 
----
+En el contexto peruano, un estudio realizado en 1 136 pacientes con melanoma reportó que el 77,7 % residía fuera de áreas metropolitanas [3]. En estas poblaciones, la valoración inicial puede estar a cargo de personal de salud sin especialización en dermatología, dificultando la diferenciación de lesiones potencialmente sospechosas y su priorización para una evaluación especializada. Esta brecha puede retrasar la referencia de pacientes que requieren valoración dermatológica.
+
+Ante esta problemática, se propone desarrollar un sistema portátil y no invasivo que integre imágenes RGB, infrarrojo cercano (NIR) y termografía infrarroja para la caracterización preliminar de lesiones melanocíticas. El sistema busca apoyar el triaje y facilitar la referencia de casos sospechosos a un dermatólogo, quien realizará la evaluación definitiva y confirmará o descartará la sospecha.
 
 ## 3. Estado del arte
 
