@@ -23,12 +23,11 @@ El sistema no pretende reemplazar la evaluación de un dermatólogo ni emitir un
 
 ## Referencias IEEE
 
-\[1\] International Agency for Research on Cancer, Global Cancer Observatory: Melanoma of Skin, GLOBOCAN 2022\. Lyon, France: IARC/WHO, 2024\. GLOBOCAN 2022 – Melanoma of skin
+[1] International Agency for Research on Cancer, Global Cancer Observatory: Cancer Today — Peru, Lyon, France: IARC, 2024. https://gco.iarc.who.int/media/globocan/factsheets/populations/604-peru-fact-sheet.pdf
 
-\[2\] L. Rey-Barroso et al., “Visible and Extended Near-Infrared Multispectral Imaging for Skin Cancer Diagnosis,” Sensors, vol. 18, no. 5, p. 1441, 2018, doi: 10.3390/s18051441. Artículo en PubMed
+[2] American Cancer Society, “Tasas de supervivencia para el cáncer de piel tipo melanoma por etapas,” 2026. https://www.cancer.org/content/dam/CRC/PDF/Public/9931.00.pdf
 
-\[3\] A. L. Shada et al., “Infrared thermography of cutaneous melanoma metastases,” Journal of Surgical Research, vol. 182, no. 1, pp. e9–e14, 2013, doi: 10.1016/j.jss.2012.09.022. Artículo en PubMed
+[3] G. Ziegler-Rodriguez et al., “Melanoma in Peru: 1000 patients and 10 years of experience,” PLoS ONE, vol. 20, no. 10, 2025, Art. no. e0323636. https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0323636
 
-\[4\] International Skin Imaging Collaboration, ISIC Archive. ISIC Archive
 
 
