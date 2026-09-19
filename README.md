@@ -53,11 +53,44 @@ Se presentan productos y soluciones desarrolladas por fabricantes relacionados c
 
 En esta sección se establecen los requisitos y exigencias que deberá cumplir la solución propuesta.
 
-| N.º | Exigencia | Tipo | Prioridad |
-|---|---|---|---|
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
+## Lista de exigencias
+
+| Categoría | Tipo | Exigencia / Descripción |
+|---|:---:|---|
+| **Función principal** | E | Analizar características de una posible lesión mediante IA embebida y enviar el resultado a una aplicación móvil mediante Bluetooth. |
+| **Funciones secundarias** | D | Recolectar diferenciales térmicos IR y de reflectancia NIR para la base de datos. |
+| | D | Almacenar datos para su descarga posterior. |
+| | E | Controlar la iluminación y distancia a la piel mediante un diseño ergonómico. |
+| **Geometría** | E | Dimensiones máximas de 150 × 120 × 80 mm y peso máximo de 250 g. |
+| **Fuerza** | D | Resistir caídas accidentales sin fracturas ni desalineación de los sensores. |
+| | E | Resistir la presión de contacto con la piel sin deformarse. |
+| **Materia** | E | Utilizar materiales resistentes, lavables y biocompatibles para el contacto indirecto con la piel. |
+| **Energía** | E | Alimentación continua mediante batería accesible. |
+| | D | Batería recargable para uso sin conexión eléctrica. |
+| **Señales** | E | Obtener imágenes de calidad y estandarizables. |
+| | D | Capturar la reflectancia NIR para comparar lesiones y piel sana. |
+| | D | Capturar la temperatura para comparar lesiones y piel sana. |
+| **Control de usuario** | E | Visualizar cambios y estados del dispositivo y la aplicación. |
+| | D | Capacitar al usuario en el uso del dispositivo y la aplicación. |
+| **Hardware** | E | Hardware adecuado para obtener imágenes analizables. |
+| | D | Hardware adecuado para medir reflectancia y temperatura. |
+| **Software** | E | Programa de código abierto para controlar el sistema e interpretar las señales. |
+| | D | Mantenimiento y actualización del código para mejorar su rendimiento. |
+| | E | Aplicación intuitiva con funciones básicas para el dispositivo. |
+| **Inteligencia Artificial** | E | IA implementada mediante código abierto. |
+| | E | Entrenamiento y evaluación con bases de datos públicas y etiquetadas. |
+| **Comunicaciones** | E | Comunicación cableada entre controlador, sensores y actuadores mediante PCB. |
+| | E | Procesamiento adecuado de señales para generar resultados. |
+| | E | Conexión Bluetooth con la aplicación, sin necesidad de Internet. |
+| **Seguridad** | E | Protección contra cortocircuitos. |
+| | D | Materiales en contacto con la piel biocompatibles según ISO. |
+| **Ergonomía** | D | Uso y manipulación con una sola mano. |
+| **Fabricación** | D | Fabricación reproducible mediante impresión 3D y hardware accesible. |
+| **Transporte** | D | Resistencia al transporte y fijación segura de los sensores. |
+| **Mantenimiento** | D | Boquilla distal extraíble e intercambiable para desinfección. |
+| | D | Limpieza del lente de la cámara después de cada uso. |
+| **Costos** | D | Costo máximo del prototipo: S/ 500, sin incluir horas-hombre. |
+| **Plazos** | E | Desarrollo, fabricación, entrenamiento y ensamblaje en un máximo de 4 meses. |
 
 ---
 
