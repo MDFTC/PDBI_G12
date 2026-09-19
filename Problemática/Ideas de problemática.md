@@ -20,24 +20,4 @@ Para el entrenamiento inicial del modelo se podría utilizar el ISIC Archive, qu
 
 \[4\] International Skin Imaging Collaboration, ISIC Archive. ISIC Archive
 
-## Propuesta
-
-### Sistema multimodal portátil para la caracterización de lesiones melanocíticas mediante imágenes RGB, infrarrojo cercano (NIR) y termografía infrarroja
-
-La propuesta consiste en desarrollar un prototipo portátil y no invasivo capaz de adquirir diferentes tipos de información de una lesión cutánea, principalmente nevos (lunares) y melanomas. El sistema combinará una cámara RGB, un sistema de infrarrojo cercano (NIR) y un sensor infrarrojo térmico (IR).
-
-La finalidad es determinar si la incorporación de información óptica y térmica permite obtener características adicionales a las observadas en una fotografía convencional y, posteriormente, utilizar estas características en un modelo de aprendizaje automático para diferenciar lesiones benignas de lesiones sospechosas.
-
-* Cámara RGB: La imagen permite analizar características visibles como: Asimetría, Bordes, Color, Distribución del pigmento, Tamaño, Forma, Textura  
-* NIR: En lugar de solamente tomar una fotografía, el dispositivo ilumina la lesión con luz NIR y mide la radiación que regresa.  
-* IR térmico: El cuerpo emite radiación infrarroja debido a su temperatura, y el sensor puede utilizar esa radiación para estimar la temperatura superficial.
-
-([https://pubmed.ncbi.nlm.nih.gov/23043862/](https://pubmed.ncbi.nlm.nih.gov/23043862/)) 
-([https://www.journalofsurgicalresearch.com/article/S0022-4804(12)00823-2/abstract](https://www.journalofsurgicalresearch.com/article/S0022-4804\(12\)00823-2/abstract)) 
-([https://opg.optica.org/abstract.cfm?URI=Cancer-2016-JTu3A.26](https://opg.optica.org/abstract.cfm?URI=Cancer-2016-JTu3A.26)) ([https://pmc.ncbi.nlm.nih.gov/articles/PMC11329730/](https://pmc.ncbi.nlm.nih.gov/articles/PMC11329730/)) ([https://pmc.ncbi.nlm.nih.gov/articles/PMC5982599/pdf/sensors-18-01441.pdf](https://pmc.ncbi.nlm.nih.gov/articles/PMC5982599/pdf/sensors-18-01441.pdf)) ([https://pubmed.ncbi.nlm.nih.gov/10843103/](https://pubmed.ncbi.nlm.nih.gov/10843103/)) 
-([https://iopscience.iop.org/article/10.1088/0031-9155/45/5/312](https://iopscience.iop.org/article/10.1088/0031-9155/45/5/312))
-
-\[1\] [https://www.neumologiaperuana.com/todo-lo-que-debe-saber-sobre-el-asma/](https://www.neumologiaperuana.com/todo-lo-que-debe-saber-sobre-el-asma/)  
-\[2\][https://www.gob.pe/institucion/minsa/noticias/1075595-asma-en-adultos-minsa-impulsa-estrategias-para-la-prevencion-con-el-fin-de-mejorar-calidad-de-vida](https://www.gob.pe/institucion/minsa/noticias/1075595-asma-en-adultos-minsa-impulsa-estrategias-para-la-prevencion-con-el-fin-de-mejorar-calidad-de-vida)  
-\[3\][https://larepublica.pe/sociedad/2026/04/28/aumentan-episodios-de-asma-en-peru-minsa-reporta-casi-19000-casos-hasta-abril-y-advierten-alza-sostenida-ntpe-1886304](https://larepublica.pe/sociedad/2026/04/28/aumentan-episodios-de-asma-en-peru-minsa-reporta-casi-19000-casos-hasta-abril-y-advierten-alza-sostenida-ntpe-1886304)
 
