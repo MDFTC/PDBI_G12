@@ -99,15 +99,50 @@ En esta sección se establecen los requisitos y exigencias que deberá cumplir l
 ### 5.1 Black Box
 
 Se presenta la representación de la caja negra del sistema, identificando las entradas, procesos y salidas principales.
+</p>
+
+<p align="center">
+  <img src="Funciones/Caja negra.png" width="500">
+</p>
+
+La caja negra se divide en dos principales bloques del wearable y de la aplicación móvil.
+</p>
+
+<p align="center">
+  <img src="Funciones/Caja negra específica.png" width="500">
+</p>
 
 ### 5.2 Secuencia de operaciones
 
 Se describe la secuencia de operaciones que debe realizar el sistema para cumplir con su función principal.
+</p>
+
+<p align="center">
+  <img src="Funciones/Secuencia de operaciones.png" width="500">
+</p>
 
 ### 5.3 Estructura de funciones
 
 Se presenta la descomposición de la función principal en funciones parciales y sus relaciones.
+</p>
 
+<p align="center">
+  <img src="Funciones/Esquema de funciones.png" width="500">
+</p>
+Se clasifica el esquema de funciones en el bloque del wearable.
+
+</p>
+
+<p align="center">
+  <img src="Funciones/Esquema de funciones dispositivo.png" width="500">
+</p>
+
+Se clasifica el esquema de funciones en el bloque de la aplicación móvil.
+</p>
+
+<p align="center">
+  <img src="Funciones/Esquema de funciones aplicación.png" width="500">
+</p>
 ---
 
 ## 6. Gantt
