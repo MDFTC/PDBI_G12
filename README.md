@@ -24,9 +24,13 @@
 ## 2. Problemática
 
 El melanoma cutáneo constituye una problemática relevante de salud debido a su capacidad de progresión y a la importancia de su identificación oportuna. En el Perú, según las estimaciones del Global Cancer Observatory para el año 2024, se registraron aproximadamente 1 965 nuevos casos de melanoma y 356 defunciones asociadas a esta enfermedad [1]. Estas cifras evidencian la necesidad de fortalecer las estrategias de evaluación y seguimiento de lesiones cutáneas sospechosas.
+
 La importancia de una evaluación temprana se refleja en las diferencias de supervivencia según la extensión de la enfermedad. De acuerdo con la American Cancer Society, la supervivencia relativa a cinco años supera el 99 % cuando el melanoma se encuentra localizado, disminuye al 76 % cuando existe propagación regional y alcanza el 36 % ante metástasis a distancia [2]. Esta variación resalta la relevancia de identificar oportunamente lesiones que requieran valoración especializada.
+
 En el contexto peruano, el acceso a una atención dermatológica oportuna puede ser limitado, lo que dificulta la evaluación temprana de lesiones cutáneas. El estudio de Ziegler-Rodriguez et al., realizado en 1136 pacientes con melanoma en el Perú, reportó que el 77.7% residía fuera de las áreas metropolitanas [3]. Esta distribución pone de manifiesto la necesidad de considerar herramientas que puedan facilitar la evaluación inicial de lesiones cutáneas en contextos donde la atención especializada puede no encontrarse disponible de manera inmediata.
+
 Asimismo, la diferenciación entre lesiones melanocíticas benignas y lesiones potencialmente sospechosas puede resultar compleja durante una evaluación inicial, especialmente cuando esta se realiza sin la participación directa de un especialista en dermatología. En este escenario, el uso de imágenes digitales estandarizadas y técnicas de aprendizaje automático representa una alternativa de investigación para analizar patrones visuales de las lesiones y brindar información complementaria al personal de salud.
+
 De esta manera, el proyecto pretende contribuir al desarrollo de una herramienta tecnológica accesible para la evaluación preliminar de lesiones cutáneas, sin reemplazar el diagnóstico médico ni la confirmación especializada, que continuará siendo responsabilidad del profesional de dermatología.
 
 
@@ -166,6 +170,8 @@ Se presenta el cronograma de actividades del proyecto mediante un diagrama de Ga
 ## 7. Referencias
 
 [1] International Agency for Research on Cancer, Global Cancer Observatory: Cancer Today — Peru, Lyon, France: IARC, 2024. https://gco.iarc.who.int/media/globocan/factsheets/populations/604-peru-fact-sheet.pdf
+
 [2] American Cancer Society, “Tasas de supervivencia para el cáncer de piel tipo melanoma por etapas,” 2026. https://www.cancer.org/content/dam/CRC/PDF/Public/9931.00.pdf
+
 [3] G. Ziegler-Rodriguez et al., “Melanoma in Peru: 1000 patients and 10 years of experience,” PLoS ONE, vol. 20, no. 10, 2025, Art. no. e0323636. https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0323636
 
