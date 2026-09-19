@@ -38,7 +38,7 @@ De esta manera, el proyecto pretende contribuir al desarrollo de una herramienta
 
 ### 3.1 Artículos académicos
 - Multimodal skin lesion classification for early cancer diagnosis using deep learning
-  - El artículo presenta un sistema inteligente capaz de analizar fotografías convencionales de la piel para detectar señales tempranas de cáncer con una efectividad cercana al 98%, utilizando la técnica Grad-CAM para ofrecer explicabilidad visual mediante mapas de calor. Además, establece una hoja de ruta metodológica estructurada por etapas que sirve como guía sólida para diseñar la arquitectura de un nuevo sistema de desarrollo. Para más detalles, puedes consultar la fuente original del artículo [5].
+  - El artículo presenta un sistema inteligente capaz de analizar fotografías convencionales de la piel para detectar señales tempranas de cáncer con una efectividad cercana al 98%, utilizando la técnica Grad-CAM para ofrecer explicabilidad visual mediante mapas de calor. Además, establece una hoja de ruta metodológica estructurada por etapas que sirve como guía sólida para diseñar la arquitectura de un nuevo sistema de desarrollo. Para más detalles, puedes consultar la fuente original del artículo [4].
 </p>
 
 <p align="center">
@@ -46,21 +46,21 @@ De esta manera, el proyecto pretende contribuir al desarrollo de una herramienta
 </p>
 
 - Comprehensive analysis of clinical images contributions for melanoma classification using convolutional neural networks
-  - El estudio evalúa la efectividad de entrenar un sistema inteligente para identificar melanoma usando fotos convencionales frente a imágenes dermatoscópicas, encontrando que estas últimas permiten un diagnóstico muy superior. No obstante, concluye que la limitación no radica en el modelo matemático, sino en la baja calidad (enfoque, luz y aumento) de las fotos clínicas tradicionales, sugiriendo que un protocolo de captura adecuado para cámaras convencionales ofrecería una base sólida de análisis [6].
+  - El estudio evalúa la efectividad de entrenar un sistema inteligente para identificar melanoma usando fotos convencionales frente a imágenes dermatoscópicas, encontrando que estas últimas permiten un diagnóstico muy superior. No obstante, concluye que la limitación no radica en el modelo matemático, sino en la baja calidad (enfoque, luz y aumento) de las fotos clínicas tradicionales, sugiriendo que un protocolo de captura adecuado para cámaras convencionales ofrecería una base sólida de análisis [5].
 </p>
 <p align="center">
   <img width="661" height="335" alt="image" src="https://github.com/user-attachments/assets/ea5c018e-0081-400c-8581-4269ed31b4ab" width="300" >
 </p>
 
 - Active Versus Passive Infrared Thermography for Skin Cancer Detection
-  - El estudio demuestra cómo la termografía activa facilita la detección del cáncer de piel mediante un estímulo frío que reduce temporalmente su temperatura basal. La sospecha de malignidad se determina si la lesión se recalienta al menos 0.70 °C más que el tejido sano circundante, aportando además la velocidad de recuperación térmica —impulsada por la angiogénesis tumoral— como una métrica clave basada en el tiempo de respuesta para el proyecto [7].
+  - El estudio demuestra cómo la termografía activa facilita la detección del cáncer de piel mediante un estímulo frío que reduce temporalmente su temperatura basal. La sospecha de malignidad se determina si la lesión se recalienta al menos 0.70 °C más que el tejido sano circundante, aportando además la velocidad de recuperación térmica —impulsada por la angiogénesis tumoral— como una métrica clave basada en el tiempo de respuesta para el proyecto [6].
 </p>
 <p align="center">
   <img width="627" height="341" alt="image" src="https://github.com/user-attachments/assets/b4914aac-d093-4e93-ae21-e80b4e157bfa" width="300" >
 </p>
 
 - A heatmap-based deep learning framework for multi-modal registration of VIS, NIR, and thermal images in dermatological imaging
-  - El estudio propone un modelo de inteligencia artificial para alinear geométricamente imágenes visibles, infrarrojas cercanas (NIR) y térmicas de una misma lesión cutánea, combinando la captura de color y bordes externos de la luz visible, la estructura profunda expuesta por el espectro NIR y las variaciones de temperatura ligadas al flujo sanguíneo captadas por la termografía. A través de la detección automática de puntos clave, el sistema supera a los métodos tradicionales de alineamiento y demuestra que la correspondencia entre imágenes visibles e infrarrojas es más precisa que con las térmicas debido a los bordes difusos de estas últimas. Además de aportar la primera base de datos pública tri-modal, esta investigación ofrece una referencia técnica directa para el prototipo al brindar estrategias prácticas para el recorte automático de la región de interés y la reducción de ruido en el análisis multimodal [8].
+  - El estudio propone un modelo de inteligencia artificial para alinear geométricamente imágenes visibles, infrarrojas cercanas (NIR) y térmicas de una misma lesión cutánea, combinando la captura de color y bordes externos de la luz visible, la estructura profunda expuesta por el espectro NIR y las variaciones de temperatura ligadas al flujo sanguíneo captadas por la termografía. A través de la detección automática de puntos clave, el sistema supera a los métodos tradicionales de alineamiento y demuestra que la correspondencia entre imágenes visibles e infrarrojas es más precisa que con las térmicas debido a los bordes difusos de estas últimas. Además de aportar la primera base de datos pública tri-modal, esta investigación ofrece una referencia técnica directa para el prototipo al brindar estrategias prácticas para el recorte automático de la región de interés y la reducción de ruido en el análisis multimodal [7].
 
 </p>
 <p align="center">
@@ -69,7 +69,7 @@ De esta manera, el proyecto pretende contribuir al desarrollo de una herramienta
 
 ### 3.2 Patentes
 - Imaging Skin Cancer Detection Device
-  - Esta patente describe un dispositivo portátil que combina fotografía superficial e iluminación subcutánea mediante emisores de luz (visibles e infrarrojos) dispuestos alrededor de una estructura cónica opaca; al proyectar luz fuera de la boquilla, esta se dispersa dentro del tejido e ilumina la lesión desde adentro, permitiendo que una cámara (que puede ser de un smartphone) capture la estructura interna, profundidad y oximetría del tumor. Su principal aporte a nuestro proyecto radica en el uso de iluminación perimetral para revelar cromóforos profundos y vascularización, demostrando cómo adaptadores de bajo costo para cámaras móviles pueden capturar capas de información interna de la piel de forma no invasiva [9].
+  - Esta patente describe un dispositivo portátil que combina fotografía superficial e iluminación subcutánea mediante emisores de luz (visibles e infrarrojos) dispuestos alrededor de una estructura cónica opaca; al proyectar luz fuera de la boquilla, esta se dispersa dentro del tejido e ilumina la lesión desde adentro, permitiendo que una cámara (que puede ser de un smartphone) capture la estructura interna, profundidad y oximetría del tumor. Su principal aporte a nuestro proyecto radica en el uso de iluminación perimetral para revelar cromóforos profundos y vascularización, demostrando cómo adaptadores de bajo costo para cámaras móviles pueden capturar capas de información interna de la piel de forma no invasiva [8].
 
 </p>
 <p align="center">
@@ -77,7 +77,7 @@ De esta manera, el proyecto pretende contribuir al desarrollo de una herramienta
 </p>
 
 - Smartphone-based multispectral dermascope
-  - Esta patente detalla un dermatoscopio portátil de bajo costo que se conecta a un dispositivo móvil para ilumina la piel con diferentes colores de luz (visibles e infrarrojos) y calcular automáticamente la concentración de componentes clave como la melanina. El invento se relaciona directamente con el proyecto al demostrar que es técnicamente factible integrar iluminación de varios tipos y sensores de imagen compactos en una unidad portátil, ejecutando procesamiento automático para extraer información fisiológica de las manchas y ayudar en la caracterización de lesiones de forma rápida [10].
+  - Esta patente detalla un dermatoscopio portátil de bajo costo que se conecta a un dispositivo móvil para ilumina la piel con diferentes colores de luz (visibles e infrarrojos) y calcular automáticamente la concentración de componentes clave como la melanina. El invento se relaciona directamente con el proyecto al demostrar que es técnicamente factible integrar iluminación de varios tipos y sensores de imagen compactos en una unidad portátil, ejecutando procesamiento automático para extraer información fisiológica de las manchas y ayudar en la caracterización de lesiones de forma rápida [9].
 
 
 ### 3.3 Revistas y catálogos
@@ -86,7 +86,7 @@ Lista de componentes que se usarán para el desarrollo del prototipo:
 <p align="center">
   <b>ESP32-S3-CAM-OV3660</b><br>
   <img width="206" height="202" alt="ESP32-S3-CAM-OV3660" src="https://github.com/user-attachments/assets/676968ba-0b71-4a99-8a79-7a2f9c047f5b" /><br>
-  <b>Descripción y funcionamiento:</b> Microcontrolador principal con módulo de cámara y conectividad Wi-Fi/Bluetooth integrada. Encargado del procesamiento central del sistema, el control de periféricos, la captura de imágenes de las lesiones cutáneas y la transmisión inalámbrica de datos hacia la aplicación móvil [12].
+  <b>Descripción y funcionamiento:</b> Microcontrolador principal con módulo de cámara y conectividad Wi-Fi/Bluetooth integrada. Encargado del procesamiento central del sistema, el control de periféricos, la captura de imágenes de las lesiones cutáneas y la transmisión inalámbrica de datos hacia la aplicación móvil [10].
 </p>
 
 
