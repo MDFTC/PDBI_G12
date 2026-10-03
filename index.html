@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Melanoma Check</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0f6fb5">
+<link rel="apple-touch-icon" href="icon-192.png">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#f5f7fa;--card:#fff;--tx:#14202b;--mu:#5d6b78;--pr:#0f6fb5;--ok:#1a8a4a;--bad:#c62828;--bd:#d9e0e6}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10171d;--card:#18222b;--tx:#e8eef3;--mu:#98a7b4;--pr:#4aa3e8;--ok:#4cc27d;--bad:#ef6b6b;--bd:#2a3743}}
+:root[data-theme="dark"]{--bg:#10171d;--card:#18222b;--tx:#e8eef3;--mu:#98a7b4;--pr:#4aa3e8;--ok:#4cc27d;--bad:#ef6b6b;--bd:#2a3743}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+main{max-width:480px;margin:0 auto;padding:20px 16px 32px;min-height:100vh}
+section{display:none}section.on{display:block}
+h1{font-size:26px;margin:8px 0}h2{font-size:20px;margin:4px 0 12px}
+p{color:var(--mu);margin:6px 0 14px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px;margin-bottom:14px}
+button{font:inherit;width:100%;padding:14px;border-radius:12px;border:1px solid var(--pr);background:var(--pr);color:#fff;font-weight:600;margin-top:10px;cursor:pointer}
+button.sec{background:transparent;color:var(--pr)}
+button:disabled{opacity:.45}
+.st{display:flex;align-items:center;gap:10px;font-weight:600}
+.dot{width:14px;height:14px;border-radius:50%;background:var(--bad)}.dot.on{background:var(--ok)}
+.hero{text-align:center;padding-top:12vh}.hero .ic{font-size:64px}
+.imgs{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.imgs figure{margin:0}.imgs img{width:100%;border-radius:10px;border:1px solid var(--bd);display:block;background:#000}
+figcaption{font-size:13px;color:var(--mu);text-align:center;margin-top:4px}
+input{font:inherit;width:100%;padding:12px;border-radius:10px;border:1px solid var(--bd);background:var(--bg);color:var(--tx);margin-top:8px}
+.res{font-weight:700;font-size:18px}.res.b{color:var(--ok)}.res.m{color:var(--bad)}
+.bar{height:10px;background:var(--bd);border-radius:6px;overflow:hidden;margin-top:6px}.bar i{display:block;height:100%;background:var(--pr)}
+.li{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--bd)}
+.li button{width:auto;margin:0;padding:8px 14px}
+.msg{font-size:14px;color:var(--mu);margin-top:8px;min-height:20px}
+.warn{font-size:13px;color:var(--mu)}
+</style></head><body><main>
+
+<section id="s1" class="on hero">
+ <div class="ic">🩺</div><h1>Tamizaje de melanoma</h1>
+ <p>Apoyo para personal de salud en zonas sin internet. Es una herramienta de tamizaje, no un diagnóstico.</p>
+ <button id="go">Comenzar</button>
+</section>
+
+<section id="s2">
+ <h2>Dispositivo</h2>
+ <div class="card">
+  <div class="st"><span class="dot" id="dot"></span><span id="stx">Desconectado</span></div>
+  <button id="conn">Buscar y conectar dispositivo</button>
+  <button class="sec" id="demo">Probar en modo demo (sin dispositivo)</button>
+  <div class="msg" id="cmsg"></div>
+ </div>
+ <div class="card">
+  <button id="new" disabled>Nuevo registro</button>
+  <button class="sec" id="mem" disabled>Ver memoria del dispositivo</button>
+ </div>
+</section>
+
+<section id="s3">
+ <h2>Esperando captura</h2>
+ <div class="card"><p>Apunta a la lesión y presiona el botón del dispositivo. La imagen llegará sola.</p>
+ <div class="bar"><i id="prog" style="width:0"></i></div><div class="msg" id="pmsg">Recibido: 0 de 3 elementos</div>
+ <button class="sec" id="snap" style="display:none">Simular captura (demo)</button></div>
+ <button class="sec" id="back3">Volver</button>
+</section>
+
+<section id="s4">
+ <h2>¿La imagen está bien?</h2>
+ <div class="card"><div class="imgs"><figure><img id="i1" alt=""><figcaption>Imagen normal</figcaption></figure><figure><img id="i2" alt=""><figcaption>Imagen GRAD</figcaption></figure></div>
+ <p id="rtx" class="res" style="margin-top:12px"></p><div class="bar"><i id="cbar"></i></div><div class="msg" id="ctx"></div></div>
+ <div class="card"><b>Datos del paciente</b>
+  <input id="nom" placeholder="Nombre completo" autocomplete="off">
+  <input id="dni" placeholder="DNI (8 dígitos)" inputmode="numeric" maxlength="8" autocomplete="off">
+  <div class="msg" id="vmsg"></div></div>
+ <button id="ok">Sí, generar PDF</button>
+ <button class="sec" id="no">No, tomar otra foto</button>
+</section>
+
+<section id="s5">
+ <h2>Guardar informe</h2>
+ <div class="card"><p>PDF generado. ¿Dónde quieres guardarlo?</p>
+  <button id="cloud">☁️ Nube (Drive, WhatsApp, correo…)</button>
+  <button class="sec" id="local">📁 Archivos del celular</button>
+  <div class="msg" id="smsg"></div></div>
+ <button class="sec" id="fin">Terminar y volver al inicio</button>
+</section>
+
+<section id="s6">
+ <h2>Memoria del dispositivo</h2>
+ <div class="card" id="list"><p>Cargando…</p></div>
+ <button class="sec" id="back6">Volver</button>
+</section>
+
+<p class="warn" style="text-align:center">Resultado orientativo. Ante cualquier duda, derivar a dermatología.</p>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script>
+// ====== Protocolo BLE (AJUSTAR a lo que programe el ESP32) ======
+const SVC='0000ffe0-0000-1000-8000-00805f9b34fb';   // servicio
+const CMDC='0000ffe1-0000-1000-8000-00805f9b34fb';  // escritura: app -> ESP32
+const DATC='0000ffe2-0000-1000-8000-00805f9b34fb';  // notificaciones: ESP32 -> app
+// Trama ESP32->app: [tipo u8][largo u32 LE][datos]. 1=JPEG normal, 2=JPEG GRAD, 3=JSON {"r":"benigno|maligno","c":0.87}, 4=JSON lista [{"id":1,"f":"2026-10-03 10:20"}]
+// Comandos app->ESP32: 0x10 = listar memoria, 0x11 + id(u8) = enviar registro
+const $=id=>document.getElementById(id);
+const S={cmd:null,demo:false,buf:new Uint8Array(0),rec:{},pdf:null};
+function show(n){document.querySelectorAll('section').forEach(s=>s.classList.toggle('on',s.id===n));scrollTo(0,0)}
+function setConn(on,txt){$('dot').classList.toggle('on',on);$('stx').textContent=txt;$('new').disabled=!on;$('mem').disabled=!on}
+
+$('go').onclick=()=>show('s2');
+$('back3').onclick=$('back6').onclick=()=>show('s2');
+$('fin').onclick=()=>{S.rec={};show('s1')};
+
+// ---- Conexión ----
+$('conn').onclick=async()=>{
+ S.demo=false;
+ if(!navigator.bluetooth){$('cmsg').textContent='Este navegador no permite Bluetooth web. Usa Chrome en Android, abriendo la página directamente.';return}
+ try{
+  $('cmsg').textContent='Buscando…';
+  const dev=await navigator.bluetooth.requestDevice({acceptAllDevices:true,optionalServices:[SVC]});
+  dev.addEventListener('gattserverdisconnected',()=>{S.cmd=null;setConn(false,'Desconectado')});
+  const srv=await dev.gatt.connect(),svc=await srv.getPrimaryService(SVC);
+  S.cmd=await svc.getCharacteristic(CMDC);
+  const d=await svc.getCharacteristic(DATC);
+  d.addEventListener('characteristicvaluechanged',onData);await d.startNotifications();
+  setConn(true,'Conectado a '+(dev.name||'dispositivo'));$('cmsg').textContent='';
+ }catch(e){$('cmsg').textContent='No se pudo conectar: '+(e.message||e)}
+};
+$('demo').onclick=()=>{S.demo=true;setConn(true,'Modo demo (simulado)');$('cmsg').textContent='Los datos son de ejemplo.'};
+const send=a=>S.cmd&&S.cmd.writeValue(new Uint8Array(a));
+
+// ---- Recepción ----
+function onData(e){
+ const v=new Uint8Array(e.target.value.buffer,e.target.value.byteOffset,e.target.value.byteLength);
+ const b=new Uint8Array(S.buf.length+v.length);b.set(S.buf);b.set(v,S.buf.length);S.buf=b;
+ while(S.buf.length>=5){
+  const dv=new DataView(S.buf.buffer,S.buf.byteOffset),t=S.buf[0],n=dv.getUint32(1,true);
+  if(S.buf.length<5+n)break;
+  handle(t,S.buf.slice(5,5+n));S.buf=S.buf.slice(5+n);
+ }
+}
+function handle(t,d){
+ const j=()=>JSON.parse(new TextDecoder().decode(d));
+ try{
+  if(t===1)S.rec.n=d;else if(t===2)S.rec.g=d;else if(t===3)S.rec.r=j();else if(t===4){renderList(j());return}
+ }catch(e){return}
+ const c=['n','g','r'].filter(k=>S.rec[k]).length;
+ $('prog').style.width=(c/3*100)+'%';$('pmsg').textContent='Recibido: '+c+' de 3 elementos';
+ if(c===3)review();
+}
+
+// ---- Nuevo registro ----
+$('new').onclick=()=>{S.rec={};S.buf=new Uint8Array(0);$('prog').style.width='0';$('pmsg').textContent='Recibido: 0 de 3 elementos';
+ $('snap').style.display=S.demo?'block':'none';show('s3')};
+$('snap').onclick=async()=>{S.rec=await demoRec();$('prog').style.width='100%';review()};
+$('no').onclick=()=>$('new').onclick();
+
+function url(b){return URL.createObjectURL(new Blob([b],{type:'image/jpeg'}))}
+function review(){
+ const r=S.rec.r,mal=/mal/i.test(r.r),p=Math.round(r.c*100);
+ $('i1').src=url(S.rec.n);$('i2').src=url(S.rec.g);
+ $('rtx').textContent=mal?'Resultado: MALIGNO (derivar)':'Resultado: BENIGNO';$('rtx').className='res '+(mal?'m':'b');
+ $('cbar').style.width=p+'%';$('ctx').textContent='Confianza del modelo: '+p+'%'+(p<60?' (baja: resultado no concluyente)':'');
+ $('vmsg').textContent='';show('s4');
+}
+
+// ---- PDF ----
+$('ok').onclick=()=>{
+ const nom=$('nom').value.trim(),dni=$('dni').value.trim();
+ if(nom.length<3||!/^\d{8}$/.test(dni)){$('vmsg').textContent='Ingresa el nombre y un DNI de 8 dígitos.';return}
+ if(!window.jspdf){$('vmsg').textContent='No cargó la librería PDF. Revisa tu conexión y recarga.';return}
+ const {jsPDF}=window.jspdf,d=new jsPDF({unit:'mm',format:'a4'}),r=S.rec.r,mal=/mal/i.test(r.r),p=Math.round(r.c*100);
+ d.setFontSize(18);d.text('Informe de tamizaje de melanoma',15,20);
+ d.setFontSize(11);d.text('Paciente: '+nom,15,32);d.text('DNI: '+dni,15,39);d.text('Fecha: '+new Date().toLocaleString('es-PE'),15,46);
+ d.addImage(S.rec.n,'JPEG',15,55,85,85);d.addImage(S.rec.g,'JPEG',110,55,85,85);
+ d.setFontSize(10);d.text('Imagen normal',15,145);d.text('Imagen GRAD',110,145);
+ d.setFontSize(14);d.setTextColor(mal?198:26,mal?40:138,mal?40:74);
+ d.text('Resultado: '+(mal?'MALIGNO - derivar a dermatologia':'BENIGNO'),15,160);
+ d.setTextColor(0);d.setFontSize(12);d.text('Confianza del modelo: '+p+'%'+(p<60?' (no concluyente)':''),15,169);
+ d.setFontSize(9);d.text(d.splitTextToSize('Este informe es orientativo y no reemplaza el diagnostico medico. Ante cualquier duda o lesion que cambie, acudir a un especialista en dermatologia.',180),15,185);
+ S.pdf={blob:d.output('blob'),name:'informe_'+dni+'.pdf'};$('smsg').textContent='';show('s5');
+};
+
+// ---- Guardar ----
+$('cloud').onclick=async()=>{
+ const f=new File([S.pdf.blob],S.pdf.name,{type:'application/pdf'});
+ try{
+  if(navigator.canShare&&navigator.canShare({files:[f]})){await navigator.share({files:[f],title:'Informe de tamizaje'});$('smsg').textContent='Compartido.'}
+  else{$('smsg').textContent='Compartir no disponible aquí. Usa "Archivos del celular" y súbelo luego a la nube.'}
+ }catch(e){if(e.name!=='AbortError')$('smsg').textContent='No se pudo compartir. Guárdalo en el celular y súbelo luego.'}
+};
+$('local').onclick=async()=>{
+ try{
+  const dl=(typeof claude!=='undefined'&&claude.use)?await claude.use('downloads'):null;
+  if(dl){await dl.save({filename:S.pdf.name,data:S.pdf.blob})}
+  else{const a=document.createElement('a');a.href=URL.createObjectURL(S.pdf.blob);a.download=S.pdf.name;document.body.appendChild(a);a.click();a.remove()}
+  $('smsg').textContent='Guardado en Descargas.';
+ }catch(e){$('smsg').textContent=(e&&e.code==='declined')?'Cancelado.':'No se pudo guardar.'}
+};
+
+// ---- Memoria del dispositivo ----
+$('mem').onclick=()=>{$('list').innerHTML='<p>Cargando…</p>';show('s6');
+ if(S.demo)renderList([{id:1,f:'2026-10-01 09:15'},{id:2,f:'2026-10-01 10:40'},{id:3,f:'2026-10-02 08:05'}]);else send([0x10])};
+function renderList(a){
+ const L=$('list');L.innerHTML='';
+ if(!a.length){L.innerHTML='<p>El dispositivo no tiene registros.</p>';return}
+ a.forEach(x=>{const r=document.createElement('div');r.className='li';
+  const t=document.createElement('span');t.textContent='Registro '+x.id+' · '+x.f;
+  const b=document.createElement('button');b.textContent='Abrir';
+  b.onclick=async()=>{S.rec={};S.buf=new Uint8Array(0);if(S.demo){S.rec=await demoRec();review()}else{send([0x11,x.id]);$('pmsg').textContent='Recibido: 0 de 3 elementos';$('prog').style.width='0';$('snap').style.display='none';show('s3')}};
+  r.append(t,b);L.append(r)});
+}
+
+// ---- Demo: imágenes simuladas ----
+function cv(draw){return new Promise(res=>{const c=document.createElement('canvas');c.width=c.height=240;draw(c.getContext('2d'));c.toBlob(async b=>res(new Uint8Array(await b.arrayBuffer())),'image/jpeg',.85)})}
+async function demoRec(){
+ const mal=Math.random()>.5;
+ const n=await cv(g=>{g.fillStyle='#e3b99a';g.fillRect(0,0,240,240);g.fillStyle=mal?'#3a2418':'#7a5239';g.beginPath();g.ellipse(120,120,mal?58:40,mal?46:40,.5,0,7);g.fill()});
+ const gr=await cv(g=>{g.fillStyle='#000';g.fillRect(0,0,240,240);g.strokeStyle='#fff';g.lineWidth=3;g.beginPath();g.ellipse(120,120,mal?58:40,mal?46:40,.5,0,7);g.stroke()});
+ return{n,g:gr,r:{r:mal?'maligno':'benigno',c:.7+Math.random()*.25}};
+}
+if('serviceWorker' in navigator)addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));
+</script></body></html>
