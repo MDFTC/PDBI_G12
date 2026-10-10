@@ -255,16 +255,40 @@ Se clasifica el esquema de funciones en el bloque de la aplicación móvil.
 
 Se presenta el cronograma de actividades del proyecto mediante un diagrama de Gantt.
 
-| Actividad | Inicio | Fin | Estado |
-|---|---|---|---|
-| Problemática y necesidades | 21/08/2026 | 22/08/2026 | Completado |
-| Estado del arte | 21/08/2026 | 04/09/2026 | Completado |
-| Marco teórico | 22/08/2026 | 04/09/2026 | Completado |
-| Lista de exigencias | 28/08/2026 | 05/09/2026 | Completado |
-| Estructura de funciones | 04/09/2026 | 11/09/2026 | Completado |
-| Matriz morfológica | 11/09/2026 | 12/09/2026 | En proceso |
-| Presentación y sustentación H1 | 17/09/2026 | 19/09/2026 | Pendiente |
-| Correcciones H1 | 20/09/2026 | 26/09/2026 | Pendiente |
+# Cronograma de trabajo — Diagrama de Gantt
+
+| N.º | Actividad | Agosto | Setiembre | Octubre | Noviembre | Tiempo (horas) |
+|:---:|---|:---:|:---:|:---:|:---:|---:|
+| 1 | [Informe](https://github.com/MDFTC/PDBI_G12/issues/10) | | | | | 16 |
+| 2 | [Problemática y necesidades](https://github.com/MDFTC/PDBI_G12/issues/2) | | | | | 5 |
+| 3 | [Estado del arte](https://github.com/MDFTC/PDBI_G12/issues/3) | | | | | 6 |
+| 4 | [Marco teórico](https://github.com/MDFTC/PDBI_G12/issues/4) | | | | | 3 |
+| 5 | [Lista de exigencias](https://github.com/MDFTC/PDBI_G12/issues/5) | | | | | 5 |
+| 6 | [Estructura de funciones](https://github.com/MDFTC/PDBI_G12/issues/6) | | | | | 7 |
+| 7 | [Preparar la presentación y sustentación del H1](https://github.com/MDFTC/PDBI_G12/issues/8) | | | | | 7 |
+| 8 | [Correcciones H1](https://github.com/MDFTC/PDBI_G12/issues/9) | | | | | 4 |
+| 9 | [Matriz morfológica](https://github.com/MDFTC/PDBI_G12/issues/7) | | | | | 4 |
+| 10 | [Diseño centrado en el usuario](https://github.com/MDFTC/PDBI_G12/issues/11) | | | | | 2 |
+| 11 | [Definición de la solución óptima](https://github.com/MDFTC/PDBI_G12/issues/12) | | | | | 2 |
+| 12 | [Preparación de entrevista al usuario](https://github.com/MDFTC/PDBI_G12/issues/13) | | | | | 2 |
+| 13 | [Realización de entrevista al usuario](https://github.com/MDFTC/PDBI_G12/issues/14) | | | | | 3 |
+| 14 | [Análisis de retroalimentación del usuario](https://github.com/MDFTC/PDBI_G12/issues/15) | | | | | 2 |
+| 15 | [Desarrollo del proyecto preliminar](https://github.com/MDFTC/PDBI_G12/issues/16) | | | | | 2 |
+| 16 | [Preparación de presentación y sustentación del H2](https://github.com/MDFTC/PDBI_G12/issues/17) | | | | | 3 |
+| 17 | [Correcciones H2](https://github.com/MDFTC/PDBI_G12/issues/18) | | | | | 4 |
+| 18 | [Pruebas con cámara y ESP32-S3](https://github.com/MDFTC/PDBI_G12/issues/20) | | | | | 4 |
+| 19 | [Pruebas con la aplicación y el ESP32-S3](https://github.com/MDFTC/PDBI_G12/issues/25) | | | | | 4 |
+| 20 | [Diseño de la impresión 3D](https://github.com/MDFTC/PDBI_G12/issues/23) | | | | | 4 |
+| 21 | [Diseño de la placa PCB](https://github.com/MDFTC/PDBI_G12/issues/24) | | | | | 4 |
+| 22 | [Impresión 3D de carcasa](https://github.com/MDFTC/PDBI_G12/issues/22) | | | | | 3 |
+| 23 | [Preparación de presentación Hito 3](https://github.com/MDFTC/PDBI_G12/issues/19) | | | | | 4 |
+| 24 | [Correcciones a los diseños](https://github.com/MDFTC/PDBI_G12/issues/26) | | | | | 3 |
+| 25 | [Correcciones Hito 3](https://github.com/MDFTC/PDBI_G12/issues/21) | | | | | 3 |
+| 26 | [Construcción oficial del prototipo](https://github.com/MDFTC/PDBI_G12/issues/27) | | | | | 4 |
+| 27 | [Correcciones y mejoras al prototipo funcional](https://github.com/MDFTC/PDBI_G12/issues/28) | | | | | 4 |
+| 28 | [Validaciones del prototipo funcional](https://github.com/MDFTC/PDBI_G12/issues/29) | | | | | 4 |
+| 29 | [Preparación para el Hito 4](https://github.com/MDFTC/PDBI_G12/issues/30) | | | | | 4 |
+| | **Total de horas programadas** | | | | | **116** |
 
 ---
 
