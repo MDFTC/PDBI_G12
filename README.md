@@ -546,3 +546,10 @@ Se presenta el cronograma de actividades del proyecto mediante un diagrama de Ga
 [21] D. R. P. Cupu, N. Syamza, and M. E. U. R. Indonesia, “Design of disc on disc wear test equipment using VDI 2221 method,” Journal of Ocean Mechanical and Aerospace -science and Engineering- (JOMAse), vol. 65, no. 3, pp. 100–106, Nov. 2021, doi: 10.36842/jomase.v65i3.255. 
 
 [22] J. Gausemeier and S. Moehringer, “VDI 2206- A new guideline for the design of mechatronic systems,” IFAC Proceedings Volumes, vol. 35, no. 2, pp. 785–790, Dec. 2002, doi: 10.1016/s1474-6670(17)34035-1.
+
+# SITIO WEB
+https://mdftc.github.io/PDBI_G12/
+
+# CANVA
+https://canva.link/d8cu4yhvxn8lya3
+
