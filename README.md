@@ -233,21 +233,21 @@ Se presenta la descomposición de la función principal en funciones parciales y
 </p>
 
 <p align="center">
-  <img src="Funciones/Funciones (3).png" width="500">
+  <img src="Funciones/Esquema de funcioness.png" width="500">
 </p>
 Se clasifica el esquema de funciones en el bloque del wearable.
 
 </p>
 
 <p align="center">
-  <img src="Funciones/Funciones (4).png" width="500">
+  <img src="Funciones/Funciones dispositivo.png" width="500">
 </p>
 
 Se clasifica el esquema de funciones en el bloque de la aplicación móvil.
 </p>
 
 <p align="center">
-  <img src="Funciones/Esquema de funciones aplicación.png" width="500">
+  <img src="Funciones/Funciones aplicacion.png" width="500">
 </p>
 ---
 
