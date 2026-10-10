@@ -251,6 +251,213 @@ Se clasifica el esquema de funciones en el bloque de la aplicación móvil.
 </p>
 ---
 
+# **Conceptos de solución óptima del proyecto**
+
+## 1. **Análisis de Factibilidad (matriz PUGH)**
+
+| Criterio | Solución ideal | Solución 1 | Solución 2 | Solución 3 |
+|---|---:|---:|---:|---:|
+| Costo de materiales | 4 | 2 | 3 | 1 |
+| Tamaño y peso | 4 | 3 | 3 | 1 |
+| Robustez de uso rural | 4 | 2 | 2 | 2 |
+| Durabilidad | 4 | 3 | 3 | 4 |
+| Cumplimiento de seguridad | 4 | 3 | 3 | 3 |
+| Eficiencia energética | 4 | 3 | 3 | 1 |
+| Mantenimiento y soporte | 4 | 2 | 3 | 2 |
+| Disponibilidad Perú | 4 | 2 | 3 | 1 |
+| Sostenibilidad | 4 | 2 | 2 | 3 |
+| Compatibilidad eléctrica | 4 | 2 | 2 | 3 |
+| Facilidad de integración | 4 | 2 | 2 | 2 |
+| **Total** | **44** | **26** | **29** | **23** |
+
+## 2. **Optimización de Recursos**
+
+A través de la matriz PUGH, la Solución 2 obtuvo 29 de 44 puntos (66 %), frente a 26 (59 %) de la Solución 2 y 23 (52 %) de la Solución 3, por lo que la Solución 2 gana por costo, tamaño, seguridad, eficiencia y disponibilidad en Perú. Es la que mejor equilibra rendimiento y recursos, por eso la proponemos como base del prototipo.
+
+La comunicación mediante Bluetooth Basic Rate entre el dispositivo y la aplicación móvil garantiza una transferencia ágil de imágenes y datos, optimizando la fluidez de trabajo al reducir tiempos de espera. Asimismo, el uso de una app nativa brinda total portabilidad en campo al prescindir de computadoras fijas o acceso web.
+
+## 3. **Impacto y Sostenibilidad**
+
+El dispositivo apoya a personal de salud no especializado en dermatología, como internos o técnicos en zonas rurales sin internet. Su función es tamizar y derivar, no diagnosticar. Permite identificar lesiones sospechosas sin que el paciente viaje a un centro de referencia, y esa detección temprana mejora el pronóstico del melanoma. El informe en PDF facilita la referencia al especialista y deja constancia de la lesión.
+
+Respecto al impacto económico, el dispositivo es de bajo costo frente a un dermatoscopio digital con análisis automático. Al funcionar sin conexión, evita gastos de datos y de servidores. El uso de piezas comunes facilita su reparación y reposición en el país.
+
+### 1. Impacto ambiental
+
+1. Batería recargable, en lugar de pilas desechables, con un cargador USB-C común que se puede alimentar con un cargador solar.
+2. Diseño modular y reparable, para reemplazar piezas sin desechar el equipo completo.
+3. Carcasa de PETG, un plástico reciclable y resistente a la limpieza con alcohol.
+4. Procesamiento local, sin gasto energético de servidores en la nube.
+5. Plan de fin de vida: entrega de las baterías de litio y de la electrónica a puntos de acopio de residuos electrónicos.
+
+### 2. Impacto ético, legal y de seguridad
+
+1. Datos del paciente: nombre y DNI se guardan cifrados en el celular, y el dispositivo almacena solo imágenes con un identificador anónimo. Deben cumplir la Ley 29733 de protección de datos personales, porque los datos de salud son sensibles. Incluyan el consentimiento informado.
+2. Sesgo: los conjuntos de datos públicos tienen poca representación de pieles oscuras. Deben mencionarlo como limitación y como línea de mejora.
+3. Falsos negativos: el resultado no debe presentarse como diagnóstico. Prioricen la sensibilidad, incluyan el nivel de confianza y el resultado “no concluyente”.
+4. Seguridad eléctrica: el dispositivo toca la piel, por eso se descartó el módulo HLK-PM01 (alimentación de red). Usan carga por USB-C de 5 V y una batería con protección. El equipo no debe usarse mientras carga.
+5. Validación y regulación: cualquier prueba con personas requiere aprobación de un comité de ética. Si algún día se comercializa, hay que verificar la normativa de dispositivos médicos con DIGEMID.
+
+# **Entrevista al usuario**
+
+## 1. **Preparación de la entrevista**
+
+Antes de realizar las entrevistas, el equipo definió con claridad el objetivo: conocer cómo el personal de salud no especializado en dermatología evalúa y refiere las lesiones cutáneas en su práctica diaria, e identificar qué necesitaría de Q’ARA SQAN para utilizarlo en una situación real. Con base en ese objetivo, se elaboró una guía de entrevista semiestructurada compuesta por tres partes: una presentación inicial (que explica el proyecto, su propósito, la confidencialidad de la información y el carácter voluntario de la participación), seis preguntas abiertas y un bloque final de datos generales.
+
+Las preguntas se ordenaron de forma progresiva, partiendo de la experiencia actual del entrevistado, pasando por la utilidad percibida del sistema, las condiciones de confianza, las dificultades de uso y la información necesaria para la referencia, hasta llegar a las propuestas de mejora. Esto permitió que el entrevistado se familiarizara con el tema antes de opinar sobre la propuesta.
+
+Se seleccionaron perfiles acordes al usuario objetivo del sistema: personal de salud de postas y centros de atención primaria, con distintas formaciones (técnico, enfermería y medicina general), para obtener perspectivas complementarias. Se coordinaron con anticipación el horario y la modalidad de cada entrevista. Además, se preparó material de apoyo con una descripción breve del sistema y se organizaron las herramientas de registro (en formato texto de entrevista en forms y grabadora de audio). Finalmente, el equipo realizó un ensayo previo entre sus integrantes para verificar la claridad de las preguntas y estimar la duración.
+
+## 2. **Habilidades de comunicación**
+
+Durante la entrevista se utilizó un lenguaje claro, sencillo y adaptado al perfil de cada entrevistado. Se evitaron tecnicismos de Machine Learning y se explicó el sistema en términos de su utilidad clínica: una cámara que captura la lesión y entrega un indicador de sospecha que apoya la decisión de referir.
+
+Las preguntas se plantearon de forma neutral y abierta, sin sugerir respuestas ni defender el proyecto, de modo que las opiniones, incluidas las críticas, pudieran expresarse con libertad. Se cuidó que las preguntas fueran breves y que se formulara una a la vez para evitar confusión.
+
+El tono fue respetuoso y se generó un ambiente de confianza que facilitó respuestas sinceras. Desde el inicio se aclaró que Q’ARA SQAN es una herramienta de apoyo y no reemplaza al dermatólogo ni al criterio clínico del personal de salud, con el fin de evitar malentendidos y generar una conversación honesta.
+
+## 3. **Escucha activa**
+
+Se mantuvo atención plena a las respuestas, sin interrumpir. Se parafraseó lo dicho para confirmar la comprensión, se usaron repreguntas surgidas de lo que el entrevistado mencionó y se prestó atención a lo no dicho: dudas, énfasis y preocupaciones recurrentes.
+
+## 4. **Profundidad de las preguntas**
+
+La guía se diseñó para avanzar de lo general a lo específico y de lo descriptivo a lo reflexivo, en seis niveles:
+
+- **Situación actual y dificultades:** Cómo evalúan y refieren hoy las lesiones sospechosas.
+- **Utilidad percibida:** Cómo creen que el sistema apoyaría su decisión clínica.
+- **Condiciones de confianza:** Qué necesitarían saber o comprobar para confiar en el resultado.
+- **Barreras prácticas:** Dificultades posibles desde la captura de la imagen hasta el resultado (iluminación, conectividad, tiempo, manejo del equipo).
+- **Información para la referencia:** Qué datos debería generar o registrar el sistema.
+- **Propuestas de mejora:** Qué cambiarían, agregarían o eliminarían, y por qué.
+
+De esta manera, la entrevista pasó de describir la práctica actual a analizar las necesidades reales y a generar propuestas concretas de mejora para el diseño del sistema.
+
+## 5. **Registro de información**
+
+Se registraron las respuestas mediante formularios de Google y grabación de audio. Luego se transcribieron y se anotaron también datos de contexto (edad, sexo, cargo) para interpretar las respuestas.
+
+## 6. **Respeto y ética**
+
+Al inicio de cada entrevista se informó claramente el propósito académico del estudio, la confidencialidad de los datos, la participación voluntaria. Se solicitó su consentimiento para registrar la información mediante notas y audio, y se aclaró que los datos personales serían anonimizados en el análisis y la presentación de resultados.
+
+Se respetó la experiencia profesional y el criterio clínico de cada participante, evitando cuestionar sus decisiones o juzgar sus prácticas actuales. Las opiniones críticas se recibieron de forma abierta, entendiéndolas como aportes valiosos para mejorar el proyecto.
+
+Asimismo, se fue transparente respecto a los alcances de Q’ARA SQAN: se explicó que no pretende diagnosticar ni sustituir al dermatólogo, sino apoyar la evaluación inicial y facilitar la referencia oportuna, evitando generar expectativas falsas. Finalmente, se agradeció la participación y se cuidó que la información se utilizara únicamente con fines académicos.
+
+## IX. Descripción y transcripción de las entrevistas
+
+### 1. **Descripción y transcripción de las entrevistas**
+
+#### a.1) Presentación y objetivo
+
+“Buen día. Somos estudiantes de Ingeniería Biomédica y estamos desarrollando Q’ARA SQAN, un sistema portátil de apoyo para la evaluación inicial de lesiones melanocíticas.
+
+Está dirigido al personal de salud no especializado en dermatología de postas o centros médicos de zonas rurales. El sistema utiliza una cámara RGB para capturar la lesión y, mediante Machine Learning, genera un indicador de sospecha basado en sus características visuales.
+
+Este resultado no busca diagnosticar ni reemplazar al dermatólogo, sino apoyar la evaluación inicial y facilitar la referencia de pacientes que requieran atención dermatológica especializada.
+
+El objetivo de esta entrevista es conocer su experiencia y opinión para identificar necesidades, dificultades y oportunidades de mejora para el uso del sistema en una situación real.
+
+La información brindada será utilizada con fines académicos y se mantendrá confidencial. Su participación es voluntaria y puede decidir no responder alguna pregunta. Agradecemos mucho su tiempo y participación.”
+
+### Usuario 1
+
+1. **Cuando encuentra una lesión cutánea que le genera dudas, ¿como suele proceder y que dificultades encuentra durante este proceso?**
+
+   En el día a día en posta rural vemos pocas lesiones dermatológicas sospechosas a la semana, a lo mucho unas 2 o 3, pero cuando llega una que nos genera duda, nuestro método es meramente visual y táctil. Si sospechamos gravedad, emitimos una hoja de referencia a atención secundaria o al cirujano para biopsia. La dificultad principal es que el dermatólogo está a horas de distancia y el trámite de referencia suele demorar.
+
+2. **Pensando en su trabajo cotidiano, ¿de qué manera un sistema como Q'ARA SQAN podría apoyar su evaluación y la decisión de referir a un paciente a un dermatólogo?**
+
+   Nos daría un respaldo técnico al momento de justificar la referencia. Un indicador de sospecha medible ayudaría a darle prioridad a la interconsulta..
+
+3. **Que necesitaría conocer o comprobar sobre el sistema para sentirse seguro al utilizar su resultado como apoyo para la referencia de un paciente?**
+
+   Necesitaría saber la tasa de sensibilidad y falsos negativos del modelo. Me preocuparía que el sistema pase por alto un melanoma temprano. También querría saber si el algoritmo fue entrenado con pieles locales, ya que la pigmentación en nuestra población rural varía mucho.
+
+4. **Si utilizara Q ARA SQAN durante la atención de un paciente, ¿que dificultades cree que podrían presentarse desde la captura de la imagen hasta la obtención del resultado?**
+
+   El tiempo de atención por paciente es aproximadamente 15 min. Si la captura requiere de tiempo para procesarse o la app tarda en conectarse, se complica la consulta.
+
+5. **Qué información considera importante que el sistema proporcione o registre para facilitar la referencia del paciente hacia una atención dermatológica especializada?**
+
+   Además del nivel de riesgo, sería excelente que registre el tamaño estimado del lunar, asimetría y bordes. Si el sistema genera un resumen, serviría para adjuntarlo a la hoja de referencia oficial de la posta y que el dermatólogo vea la evolución o la evidencia visual previa.
+
+6. **¿Hay algún otro comentario o recomendación que quisiera compartir sobre la propuesta?**
+
+   Más que cambiar la idea, le agregaría valor: sugeriría que la cámara o app permita un modo de 'lupa digital' amplificada antes de tomar la captura para inspeccionar bordes a detalle en pantalla. Asimismo, si bien el foco es melanoma, sería útil que al menos oriente si hay sospecha de otros tipos.
+
+**Edad:** 33
+
+**Sexo:** Femenino
+
+**Ocupación:** Técnica de enfermería
+
+### Usuario 2
+
+1. **Cuando encuentra una lesión cutánea que le genera dudas, ¿como suele proceder y que dificultades encuentra durante este proceso?**
+
+   Lo reviso a simple vista, le pregunto al paciente desde cuándo la tiene y si ha cambiado. Si me parece sospechosa lo derivo al hospital. La dificultad es que es complicado distinguir bien el lunar sin un dermatoscopio, así que a veces derivo por precaución.
+
+2. **Pensando en su trabajo cotidiano, ¿de qué manera un sistema como Q'ARA SQAN podría apoyar su evaluación y la decisión de referir a un paciente a un dermatólogo?**
+
+   Me ayudaría a tener una segunda opinión. Si el sistema me dice que hay sospecha, tendría más argumentos para poder referir al paciente si considero que la lesión requieres un especialista.
+
+3. **Que necesitaría conocer o comprobar sobre el sistema para sentirse seguro al utilizar su resultado como apoyo para la referencia de un paciente?**
+
+   Saber con cuántos pacientes se probó y si funciona en distintos tonos piel. También quisiera saber qué tan seguido se equivoca, porque si me da un falso ‘no sospechoso’ considero que sería en vano la propuesta.
+
+4. **Si utilizara Q ARA SQAN durante la atención de un paciente, ¿que dificultades cree que podrían presentarse desde la captura de la imagen hasta la obtención del resultado?**
+
+   Que el paciente se mueva, o que la lesión esté en zonas difíciles como la espalda o el cuero cabelludo.
+
+5. **Que información considera importante que el sistema proporcione o registre para facilitar la referencia del paciente hacia una atención dermatológica especializada?**
+
+   Una imagen ampliada de buena calidad, la ubicación de la lesión y el nivel de sospecha.
+
+6. **¿Hay algún otro comentario o recomendación que quisiera compartir sobre la propuesta?**
+
+   Que no sea solo un número o un ‘sí/no’, sino que explique por qué lo considera sospechoso, por ejemplo si es por el borde o el color.
+
+**Edad:** 28
+
+**Sexo:** Masculino
+
+**Ocupación:** Médico serumista
+
+### Usuario 3
+
+1. **Cuando encuentra una lesión cutánea que le genera dudas, ¿como suele proceder y que dificultades encuentra durante este proceso?**
+
+   Observo la lesión y pregunto por antecedentes y exposición al sol. Si me preocupa, aviso al médico del establecimiento. La dificultad es que cuesta decidir cuándo es urgente. Se derivan pocos casos y casi siempre por criterio visual.
+
+2. **Pensando en su trabajo cotidiano, ¿de qué manera un sistema como Q'ARA SQAN podría apoyar su evaluación y la decisión de referir a un paciente a un dermatólogo?**
+
+   Para tener un criterio más objetivo. A veces los pacientes no quieren ir al dermatólogo porque no ven gravedad; un resultado del sistema ayudaría a explicar la importancia de ir.
+
+3. **Que necesitaría conocer o comprobar sobre el sistema para sentirse seguro al utilizar su resultado como apoyo para la referencia de un paciente?**
+
+   Necesitaría ver estudios de validación y su comparación con el criterio de un dermatólogo.
+
+4. **Si utilizara Q ARA SQAN durante la atención de un paciente, ¿que dificultades cree que podrían presentarse desde la captura de la imagen hasta la obtención del resultado?**
+
+   Que la imagen salga desenfocada o con mala iluminación, también creo que el vello sería un factor que se debería considerar para la detección.
+
+5. **Que información considera importante que el sistema proporcione o registre para facilitar la referencia del paciente hacia una atención dermatológica especializada?**
+
+   Los datos del paciente y el resultado con su nivel de confianza, además de mi propio criterio.
+
+6. **¿Hay algún otro comentario o recomendación que quisiera compartir sobre la propuesta?**
+
+   Me gustaría probarlo en una consulta real antes de opinar. Quitaría lo que complique el uso y agregaría una guía rápida paso a paso.
+
+**Edad:** 26
+
+**Sexo:** Femenino
+
+**Ocupación:** Médico general
+
+
 ## 6. Gantt
 
 Se presenta el cronograma de actividades del proyecto mediante un diagrama de Gantt.
