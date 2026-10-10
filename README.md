@@ -215,7 +215,7 @@ La caja negra se divide en dos principales bloques del wearable y de la aplicaci
 </p>
 
 <p align="center">
-  <img src="Funciones/Caja negra específica.png" width="500">
+  <img src="Funciones/Caja negra específicaa.png" width="500">
 </p>
 
 ### 5.2 Secuencia de operaciones
