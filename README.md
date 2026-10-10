@@ -136,46 +136,67 @@ Lista de componentes que se usarán para el desarrollo del prototipo:
 
 ## 4. Lista de Exigencias
 
-En esta sección se establecen los requisitos y exigencias que deberá cumplir la solución propuesta.
+Este documento presenta los requerimientos funcionales y técnicos del dispositivo, organizados por categorías. Cada requerimiento se clasifica como Exigencia (E) o Deseo (D) e incluye su fecha de registro y los responsables correspondientes.
 
 ## Lista de exigencias
 
-| Categoría | Tipo | Exigencia / Descripción |
-|---|:---:|---|
-| **Función principal** | E | Analizar características de una posible lesión mediante IA embebida y enviar el resultado a una aplicación móvil mediante Bluetooth. |
-| **Funciones secundarias** | D | Recolectar diferenciales térmicos IR y de reflectancia NIR para la base de datos. |
-| | D | Almacenar datos para su descarga posterior. |
-| | E | Controlar la iluminación y distancia a la piel mediante un diseño ergonómico. |
-| **Geometría** | E | Dimensiones máximas de 150 × 120 × 80 mm y peso máximo de 250 g. |
-| **Fuerza** | D | Resistir caídas accidentales sin fracturas ni desalineación de los sensores. |
-| | E | Resistir la presión de contacto con la piel sin deformarse. |
-| **Materia** | E | Utilizar materiales resistentes, lavables y biocompatibles para el contacto indirecto con la piel. |
-| **Energía** | E | Alimentación continua mediante batería accesible. |
-| | D | Batería recargable para uso sin conexión eléctrica. |
-| **Señales** | E | Obtener imágenes de calidad y estandarizables. |
-| | D | Capturar la reflectancia NIR para comparar lesiones y piel sana. |
-| | D | Capturar la temperatura para comparar lesiones y piel sana. |
-| **Control de usuario** | E | Visualizar cambios y estados del dispositivo y la aplicación. |
-| | D | Capacitar al usuario en el uso del dispositivo y la aplicación. |
-| **Hardware** | E | Hardware adecuado para obtener imágenes analizables. |
-| | D | Hardware adecuado para medir reflectancia y temperatura. |
-| **Software** | E | Programa de código abierto para controlar el sistema e interpretar las señales. |
-| | D | Mantenimiento y actualización del código para mejorar su rendimiento. |
-| | E | Aplicación intuitiva con funciones básicas para el dispositivo. |
-| **Inteligencia Artificial** | E | IA implementada mediante código abierto. |
-| | E | Entrenamiento y evaluación con bases de datos públicas y etiquetadas. |
-| **Comunicaciones** | E | Comunicación cableada entre controlador, sensores y actuadores mediante PCB. |
-| | E | Procesamiento adecuado de señales para generar resultados. |
-| | E | Conexión Bluetooth con la aplicación, sin necesidad de Internet. |
-| **Seguridad** | E | Protección contra cortocircuitos. |
-| | D | Materiales en contacto con la piel biocompatibles según ISO. |
-| **Ergonomía** | D | Uso y manipulación con una sola mano. |
-| **Fabricación** | D | Fabricación reproducible mediante impresión 3D y hardware accesible. |
-| **Transporte** | D | Resistencia al transporte y fijación segura de los sensores. |
-| **Mantenimiento** | D | Boquilla distal extraíble e intercambiable para desinfección. |
-| | D | Limpieza del lente de la cámara después de cada uso. |
-| **Costos** | D | Costo máximo del prototipo: S/ 500, sin incluir horas-hombre. |
-| **Plazos** | E | Desarrollo, fabricación, entrenamiento y ensamblaje en un máximo de 4 meses. |
+| **Fecha (cambios)**         | **Deseo (D) / Exigencia (E)** | **Descripción**                                                                                                                                                                               | **Responsable:**        |
+| --------------------------- | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| **Función Principal**       |                               |                                                                                                                                                                                               |                         |
+| 12/09/2026                  | **E**                         | Analizar características obtenidas a partir de una imagen de un posible melanoma por medio de IA entrenado e embebido, el resultado debe ser enviado a una aplicación de celular sin internet | **AM, AH, AP, MT y CR** |
+| **Funciones Secundarias**   |                               |                                                                                                                                                                                               |                         |
+| 12/09/2026                  | **D**                         | Recolección diferenciales térmicos IR y diferenciales de reflectancia NIR para crear una base de datos de entrenamiento                                                                       | **AM, AH, AP, MT y CR** |
+| 12/09/2026                  | **D**                         | Almacenar datos para ser descargados posteriormente                                                                                                                                           | **AH, AP y MT**         |
+| 12/09/2026                  | **E**                         | Garantizar condiciones de iluminación controlada y distancia segura con la piel del paciente mediante un diseño ergonómico.                                                                   | **AH, AP y MT**         |
+| 09/10/2026                  | **D**                         | El análisis de iamgen debe dar como resultado Datos como el ABDC del lunar                                                                                                                    | **AH, MT**              |
+| 10/10/2026                  | **D**                         | En caso de no ser melanoma, indicar de qué podría tratarse                                                                                                                                    | **AH, MT**              |
+| **Geometría**               |                               |                                                                                                                                                                                               |                         |
+| 14/8/2026                   | **E**                         | El dispositivo debe presentar dimensiones máximas aproximadas para manejo con una solamano (150 mm de largo, 120 mm de ancho y 80 mm de espesor), con un peso máximo de 250 g.                | **AM, AH, AP, MT y CR** |
+| **Fuerza**                  |                               |                                                                                                                                                                                               |                         |
+| 14/8/2026                   | **D**                         | La carcasa debe soportar caídas accidentales sobre una superficie dura sin sufrir fracturas ni desalinear los sensores ópticos.                                                               | **AM, AH, AP, MT y CR** |
+| 12/09/2026                  | **E**                         | Resistencia al contacto: El cabezal debe tolerar una presión de compresión contra la piel sin deformarse.                                                                                     | **AM**                  |
+| **Materia**                 |                               |                                                                                                                                                                                               |                         |
+| 14/8/2026                   | **E**                         | La carcasa debe estar fabricada por un polímero lavable, resistente y biocompatible al contacto indirecto con la piel humana.                                                                 | **AM, AH, AP, MT y CR** |
+| **Energía**                 |                               |                                                                                                                                                                                               |                         |
+| 14/8/2026                   | **E**                         | Alimentación continua a través de una batería de fácil acceso                                                                                                                                 | **AM, AH, AP, MT y CR** |
+| 12/09/2026                  | **D**                         | Alimentación de una batería recargable en caso de no tener conexión a la corriente eléctrica.                                                                                                 | **AH, AP y MT**         |
+| **Señales**                 |                               |                                                                                                                                                                                               |                         |
+| 14/8/2026                   | **E**                         | Adquisición de imagen de calidad comparable a las referencias y estandarizable.                                                                                                               | **AM, AH, AP, MT y CR** |
+| 17/09/2026                  | **D**                         | Capturar la reflectancia espectral de bandas necesarias según referencias para evaluar diferencias entre posible melanoma y piel sana.                                                        | **AH**                  |
+| 17/09/2026                  | **D**                         | Capturar la temperatura para evaluar las diferencias entre posible melanoma y piel sana.                                                                                                      | **MT**                  |
+| **Control de usuario**      |                               |                                                                                                                                                                                               |                         |
+| 17/09/2026                  | **E**                         | El usuario podrá visualizar cambios y estados del dispositivo y/o aplicación, a través de sus componentes                                                                                     | **CR**                  |
+| 14/8/2026                   | **D**                         | El usuario requerirá captación para entender el funcionamiento y manejo del dispositivo con la aplicación                                                                                     | **AM, AH, AP, MT y CR** |
+| **Hardware**                |                               |                                                                                                                                                                                               |                         |
+| 14/8/2026                   | **E**                         | Se usará el hardware necesario para obtener las imágenes de calidad y analizables.                                                                                                            | **AM, AH, AP, MT y CR** |
+| 17/09/2026                  | **D**                         | Se usará el hardware necesario para obtener valores de reflectancia y/o temperatura.                                                                                                          | **AH, AP y MT**         |
+| **Software**                |                               |                                                                                                                                                                                               |                         |
+| 14/8/2026                   | **E**                         | Se utilizará un programa de código abierto para el control del sistema e interpretar las señales entrantes de los sensores.                                                                   | **AM, AH, AP, MT y CR** |
+| 17/09/2026                  | **D**                         | Se requiere un mantenimiento del código para su actualización, evaluar datos recolectados y mejorar su rendimiento                                                                            | **AP**                  |
+| 18/09/2026                  | **E**                         | Diseñar una aplicación intuitiva y con funciones básicas para el dispositivo                                                                                                                  | **MT y CR**             |
+| **Inteligencia Artificial** |                               |                                                                                                                                                                                               |                         |
+| 17/09/2026                  | **E**                         | La implementación de la IA se genera a partir de código abierto                                                                                                                               | **AM, AH y AP**         |
+| 17/09/2026                  | **E**                         | El entrenamiento y evaluación será a partir de bases de datos públicas y oficialmente etiquetadas.                                                                                            | **AM**                  |
+| **Comunicaciones**          |                               |                                                                                                                                                                                               |                         |
+| 14/8/2026                   | **E**                         | El controlador debe poder comunicarse con los sensores y actuadores a través de un sistema directo de cableado (placa PCB).                                                                   | **AM, AH, AP, MT y CR** |
+| 17/09/2026                  | **E**                         | El dispositivo debe ser capaz de procesar correctamente la información o señales y generar resultados.                                                                                        | **AM, AH y AP**         |
+| 17/09/2026                  | **E**                         | La conexión con la aplicación de celular debe ser por BlueTooth para evitar la necesidad de internet                                                                                          | **AP, MT y CR**         |
+| **Seguridad**               |                               |                                                                                                                                                                                               |                         |
+| 14/8/2026                   | **E**                         | Evaluar la necesidad de elementos para evitar cortocircuitos                                                                                                                                  | **AM y AH**             |
+| 17/09/2026                  | **D**                         | Al entrar en contacto con la superficie de la piel, es necesario que no genere reacciones (Normas ISO de Biocompatibilidad)                                                                   | **AM y CR**             |
+| **Ergonomía**               |                               |                                                                                                                                                                                               |                         |
+| 14/8/2026                   | **D**                         | **Ergonomía:**<br>**El dispositivo permite que sea cargado, acomodado y utilizable con una sola mano**                                                                                        | **AM yCR**              |
+| **Fabricación**             |                               |                                                                                                                                                                                               |                         |
+| 14/8/2026                   | **D**                         | El dispositivos debe ser reproducible a través de impresión 3D y componerse de hardware accesible                                                                                             | **AP, MT y CR**         |
+| **Transporte**              |                               |                                                                                                                                                                                               |                         |
+| 14/8/2026                   | **D**                         | El dispositivo debe soportar en transporte dentro de mochilas/maletines médicos y evitar que se muevan los sensores                                                                           | **AM, AP y CR**         |
+| **Mantenimiento**           |                               |                                                                                                                                                                                               |                         |
+| 14/8/2026                   | **D**                         | Boquilla distal extraíble (material en contacto con la piel) debe ser intercambiable para desinfección rápida entre pacientes con alcohol isopropílico al 70%                                 | **AM y AH**             |
+| 17/09/2026                  | **D**                         | La limpieza del lente de cámara debe ser después de su uso                                                                                                                                    | **AM y MT**             |
+| **Costos**                  |                               |                                                                                                                                                                                               |                         |
+| 14/8/2026                   | **D**                         | La producción del prototipo con los requerimientos (exigencias) debe costar como máximo 500 soles, sin contar horas hombre                                                                    | **AM, y CR**            |
+| **Plazos**                  |                               |                                                                                                                                                                                               |                         |
+| 14/8/2026                   | **E**                         | Desarrollo, fabricación de PCB, entrenamiento de modelo local y ensamble de prototipo funcional en un tiempo máximo de 4 meses.                                                               | **MT y CR**             |
 
 ---
 
