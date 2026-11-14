@@ -458,10 +458,10 @@ La información brindada será utilizada con fines académicos y se mantendrá c
 **Ocupación:** Médico general
 
 ## 6. Diagrama de bloques
-Hitos/Hito 3/Diagrama de bloques (2).png
+[Hitos/Hito 3/Diagrama de bloques (2).png](https://github.com/MDFTC/PDBI_G12/blob/main/Hitos/Hito%203/Diagrama%20de%20bloques%20(2).png)
 
 ## 7. Esquemático
-Hitos/Hito 3/SCH_Esquemático_2026-11-07.pdf
+[Hitos/Hito 3/SCH_Esquemático_2026-11-07.pdf](https://github.com/MDFTC/PDBI_G12/blob/main/Hitos/Hito%203/SCH_Esquem%C3%A1tico_2026-11-07.pdf)
 
 ## 8. Gantt
 
