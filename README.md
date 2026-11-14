@@ -457,8 +457,13 @@ La información brindada será utilizada con fines académicos y se mantendrá c
 
 **Ocupación:** Médico general
 
+## 6. Diagrama de bloques
+Hitos/Hito 3/Diagrama de bloques (2).png
 
-## 6. Gantt
+## 7. Esquemático
+Hitos/Hito 3/SCH_Esquemático_2026-11-07.pdf
+
+## 8. Gantt
 
 Se presenta el cronograma de actividades del proyecto mediante un diagrama de Gantt.
 
@@ -499,7 +504,7 @@ Se presenta el cronograma de actividades del proyecto mediante un diagrama de Ga
 
 ---
 
-## 7. Referencias
+## 9. Referencias
 
 [1] International Agency for Research on Cancer, Global Cancer Observatory: Cancer Today — Peru, Lyon, France: IARC, 2024. https://gco.iarc.who.int/media/globocan/factsheets/populations/604-peru-fact-sheet.pdf
 
