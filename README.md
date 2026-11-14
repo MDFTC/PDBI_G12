@@ -547,9 +547,10 @@ Se presenta el cronograma de actividades del proyecto mediante un diagrama de Ga
 
 [22] J. Gausemeier and S. Moehringer, “VDI 2206- A new guideline for the design of mechatronic systems,” IFAC Proceedings Volumes, vol. 35, no. 2, pp. 785–790, Dec. 2002, doi: 10.1016/s1474-6670(17)34035-1.
 
-# SITIO WEB
-https://mdftc.github.io/PDBI_G12/
-
 # CANVA
 https://canva.link/d8cu4yhvxn8lya3
+
+# ONSHAPE
+https://cad.onshape.com/documents/e250aa14645f86f31289a716/w/613bc8d449e9dda249cad4de/e/283e98c2c7a31e1b8a0738aa
+
 
